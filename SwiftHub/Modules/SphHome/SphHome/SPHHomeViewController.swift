@@ -14,48 +14,46 @@ import RxDataSources
 private let reuseIdentifier = R.reuseIdentifier.sphHomeCell.identifier
 
 class SPHHomeViewController: TableViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
     override func makeUI() {
         super.makeUI()
-
+        
         languageChanged.subscribe(onNext: { [weak self] () in
             self?.title = R.string.localizable.settingsNavigationTitle.key.localized()
         }).disposed(by: rx.disposeBag)
-
+        
         tableView.register(R.nib.sphHomeCell)
-
     }
-
+    
     override func bindViewModel() {
         super.bindViewModel()
         guard let viewModel = viewModel as? SPHHomeViewModel else { return }
-
+        
         let refresh = Observable.of(Observable.just(()), headerRefreshTrigger).merge()
         let input = SPHHomeViewModel.Input(selection: tableView.rx.modelSelected(SPHHomeCellModel.self).asDriver(),
-                                           headerRefresh: refresh,
-                                           footerRefresh: footerRefreshTrigger)
+                                           headerRefresh: refresh)
         let output = viewModel.transform(input: input)
-
+        
         viewModel.loading.asObservable().bind(to: isLoading).disposed(by: rx.disposeBag)
         viewModel.headerLoading.asObservable().bind(to: isHeaderLoading).disposed(by: rx.disposeBag)
         viewModel.footerLoading.asObservable().bind(to: isFooterLoading).disposed(by: rx.disposeBag)
-
+        
         output.items.asDriver(onErrorJustReturn: [])
             .drive(tableView.rx.items(cellIdentifier: reuseIdentifier, cellType: SPHHomeCell.self)) { tableView, viewModel, cell in
                 cell.bind(to: viewModel)
-            }.disposed(by: rx.disposeBag)
-
-//        viewModel.branchSelected.subscribe(onNext: { [weak self] (branch) in
-//            self?.navigator.pop(sender: self)
-//        }).disposed(by: rx.disposeBag)
-//
-//        viewModel.error.asDriver().drive(onNext: { [weak self] (error) in
-//            self?.showAlert(title: R.string.localizable.commonError.key.localized(), message: error.localizedDescription)
-//        }).disposed(by: rx.disposeBag)
+        }.disposed(by: rx.disposeBag)
+        
+        //        viewModel.branchSelected.subscribe(onNext: { [weak self] (branch) in
+        //            self?.navigator.pop(sender: self)
+        //        }).disposed(by: rx.disposeBag)
+        //
+        //        viewModel.error.asDriver().drive(onNext: { [weak self] (error) in
+        //            self?.showAlert(title: R.string.localizable.commonError.key.localized(), message: error.localizedDescription)
+        //        }).disposed(by: rx.disposeBag)
     }
 }

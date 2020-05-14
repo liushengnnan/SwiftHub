@@ -176,7 +176,6 @@
 		07FDBC0B223D090C00D72AFC /* Repository.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 07FDBC0A223D090C00D72AFC /* Repository.graphql */; };
 		10FF001614268611DEEC3698 /* Pods_SwiftHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6D5D7DF286987ECF4F8FDD /* Pods_SwiftHub.framework */; };
 		21C12854A33FB761C193427F /* Pods_SwiftHubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DCB88A802BEA0D429184566 /* Pods_SwiftHubUITests.framework */; };
-		2C10711A246C2272003FF1B3 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C107119246C2272003FF1B3 /* Record.swift */; };
 		2C10711D246C2326003FF1B3 /* SPHHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C10711C246C2326003FF1B3 /* SPHHomeViewController.swift */; };
 		2C10711F246C238D003FF1B3 /* SphApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C10711E246C238D003FF1B3 /* SphApi.swift */; };
 		2C107121246C2760003FF1B3 /* SPHHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C107120246C2760003FF1B3 /* SPHHomeViewModel.swift */; };
@@ -493,7 +492,6 @@
 		07FC33841FFFE54800D53888 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		07FC33861FFFE68800D53888 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		07FDBC0A223D090C00D72AFC /* Repository.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Repository.graphql; sourceTree = "<group>"; };
-		2C107119246C2272003FF1B3 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		2C10711C246C2326003FF1B3 /* SPHHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SPHHomeViewController.swift; path = SphHome/SPHHomeViewController.swift; sourceTree = "<group>"; };
 		2C10711E246C238D003FF1B3 /* SphApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SphApi.swift; sourceTree = "<group>"; };
 		2C107120246C2760003FF1B3 /* SPHHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHHomeViewModel.swift; sourceTree = "<group>"; };
@@ -988,7 +986,6 @@
 				07E1B2F821A43E8C00F6EAE3 /* State.swift */,
 				07B2C1F3213AD4CA00FE7AC0 /* Token.swift */,
 				A09DE8A420E7A15A00F6F2BF /* User.swift */,
-				2C107119246C2272003FF1B3 /* Record.swift */,
 				2C10712E246C4A4D003FF1B3 /* Sph.swift */,
 			);
 			path = Models;
@@ -1967,7 +1964,6 @@
 				070FF83C20F221970070F5E8 /* UserViewController.swift in Sources */,
 				C762C6661E1D559000C09EBD /* NavigationController.swift in Sources */,
 				A0ED264A20F76A7D004E8137 /* LoginViewController.swift in Sources */,
-				2C10711A246C2272003FF1B3 /* Record.swift in Sources */,
 				0713D7B722816C9F00A10A08 /* ChatViewController.swift in Sources */,
 				A07DC85421EE0DED00AA7951 /* ContactsManager.swift in Sources */,
 				C762C6611E1D559000C09EBD /* CollectionView.swift in Sources */,

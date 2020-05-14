@@ -11,14 +11,14 @@ import RxSwift
 import RxCocoa
 
 class SPHHomeCellModel: DefaultTableViewCellViewModel {
-
-    let record: Record
-
-    init(with record: Record) {
+    let record: YearRecord
+    init(with record: YearRecord) {
         self.record = record
         super.init()
-        title.accept(record.quarter)
+        title.accept(record.year)
         detail.accept(record.volumeOfMobileData)
-        image.accept(R.image.icon_cell_git_branch()?.template)
+        if record.decrease {
+            image.accept(R.image.icon_cell_git_branch()?.template)
+        }
     }
 }

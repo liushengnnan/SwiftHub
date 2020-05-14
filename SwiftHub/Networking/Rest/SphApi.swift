@@ -22,7 +22,6 @@ extension SphApi: TargetType, ProductAPIType {
         case .datastoreSearch: return "/api/3/action/datastore_search"
         }
     }
-    
     public var method: Moya.Method {
         switch self {
         case .datastoreSearch:
@@ -35,7 +34,7 @@ extension SphApi: TargetType, ProductAPIType {
         }
         return .requestPlain
     }
-    public var headers: [String : String]? {
+    public var headers: [String: String]? {
         return nil
     }
     
