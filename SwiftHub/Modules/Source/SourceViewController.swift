@@ -115,7 +115,7 @@ class SourceViewController: ViewController {
                             message: error.localizedDescription,
                             buttonTitles: nil,
                             highlightedButtonIndex: nil,
-                            completion: { (index) in
+                            completion: { (_) in
                                 self?.navigator.pop(sender: self)
             })
         }).disposed(by: rx.disposeBag)

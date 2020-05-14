@@ -19,7 +19,7 @@ class ContributionsView: View {
         snp.makeConstraints({ (make) in
             make.height.equalTo(10)
         })
-        calendar.subscribe(onNext: { [weak self] (calendar) in
+        calendar.subscribe(onNext: { [weak self] (_) in
             self?.updateUI()
         }).disposed(by: self.rx.disposeBag)
     }

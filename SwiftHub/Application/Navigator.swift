@@ -72,7 +72,7 @@ class Navigator {
             let homeVC = SPHHomeViewController(viewModel: viewModel, navigator: self)
             let nvc = NavigationController(rootViewController: homeVC)
             return nvc
-            
+
         case .tabs(let viewModel):
             let rootVC = HomeTabBarController(viewModel: viewModel, navigator: self)
             let detailVC = InitialSplitViewController(viewModel: nil, navigator: self)

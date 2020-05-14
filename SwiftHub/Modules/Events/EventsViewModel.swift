@@ -90,7 +90,7 @@ class EventsViewModel: ViewModel, ViewModelType {
                 return viewModel
             })
 
-        let navigationTitle = mode.map({ (mode) -> String in
+        let navigationTitle = mode.map({ (_) -> String in
             return R.string.localizable.eventsNavigationTitle.key.localized()
         }).asDriver(onErrorJustReturn: "")
 

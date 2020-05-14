@@ -113,7 +113,7 @@ class HomeTabBarController: RAMAnimatedTabBarController, Navigatable {
 
         NotificationCenter.default
             .rx.notification(NSNotification.Name(LCLLanguageChangeNotification))
-            .subscribe { [weak self] (event) in
+            .subscribe { [weak self] (_) in
                 self?.animatedItems.forEach({ (item) in
                     item.title = HomeTabBarItem(rawValue: item.tag)?.title
                 })

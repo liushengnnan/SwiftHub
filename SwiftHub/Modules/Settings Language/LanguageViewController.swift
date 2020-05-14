@@ -53,7 +53,7 @@ class LanguageViewController: TableViewController {
         let output = viewModel.transform(input: input)
 
         output.items
-            .drive(tableView.rx.items(cellIdentifier: reuseIdentifier, cellType: LanguageCell.self)) { tableView, viewModel, cell in
+            .drive(tableView.rx.items(cellIdentifier: reuseIdentifier, cellType: LanguageCell.self)) { _, viewModel, cell in
                 cell.bind(to: viewModel)
             }.disposed(by: rx.disposeBag)
 

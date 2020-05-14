@@ -71,7 +71,7 @@ class IssuesViewModel: ViewModel, ViewModelType {
                 return viewModel
             })
 
-        let navigationTitle = repository.map({ (mode) -> String in
+        let navigationTitle = repository.map({ (_) -> String in
             return R.string.localizable.eventsNavigationTitle.key.localized()
         }).asDriver(onErrorJustReturn: "")
 

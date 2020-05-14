@@ -12,6 +12,12 @@ import RxSwift
 import RxDataSources
 
 class SPHHomeViewModel: ViewModel, ViewModelType {
+    var id = "a807b7ab-6cad-4aa6-87d0-e283a7353a0f"
+
+    init(id: String, provider: SwiftHubAPI) {
+        self.id = id
+        super.init(provider: provider)
+    }
     
     struct Input {
         let selection: Driver<SPHHomeCellModel>
@@ -28,7 +34,7 @@ class SPHHomeViewModel: ViewModel, ViewModelType {
         input.headerRefresh.flatMapLatest({ [weak self] () -> Observable<[SPHHomeCellModel]> in
             guard let self = self else { return Observable.just([]) }
             self.page = 1
-            return self.request()
+            return self.request(id: self.id)
                 .trackActivity(self.headerLoading)
         })
             .subscribe(onNext: { (items) in
@@ -37,13 +43,13 @@ class SPHHomeViewModel: ViewModel, ViewModelType {
         
         return Output(items: elements)
     }
-    func request() -> Observable<[SPHHomeCellModel]> {
-        let id = "a807b7ab-6cad-4aa6-87d0-e283a7353a0f"
+    
+    func request(id: String) -> Observable<[SPHHomeCellModel]> {
         return provider.datastoreSearch(id: id, limit: nil, quary: nil)
             .trackActivity(loading)
             .trackError(error)
             .map {
-                let yearRecords = YearRecord.convertToYearRecords2(records: $0.result!.records!)
+                let yearRecords = YearRecord.convertToYearRecords(records: $0.result!.records!)
                 return yearRecords.map({ (record) -> SPHHomeCellModel in
                     let viewModel = SPHHomeCellModel(with: record)
                     return viewModel

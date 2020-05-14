@@ -46,11 +46,11 @@ class BranchesViewController: TableViewController {
         }).disposed(by: rx.disposeBag)
 
         output.items.asDriver(onErrorJustReturn: [])
-            .drive(tableView.rx.items(cellIdentifier: reuseIdentifier, cellType: BranchCell.self)) { tableView, viewModel, cell in
+            .drive(tableView.rx.items(cellIdentifier: reuseIdentifier, cellType: BranchCell.self)) { _, viewModel, cell in
                 cell.bind(to: viewModel)
             }.disposed(by: rx.disposeBag)
 
-        viewModel.branchSelected.subscribe(onNext: { [weak self] (branch) in
+        viewModel.branchSelected.subscribe(onNext: { [weak self] (_) in
             self?.navigator.pop(sender: self)
         }).disposed(by: rx.disposeBag)
 

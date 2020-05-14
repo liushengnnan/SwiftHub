@@ -64,7 +64,8 @@ final class Application: NSObject {
 
     func presentTestScreen(in window: UIWindow?) {
         guard let window = window, let provider = provider else { return }
-        let viewModel = SPHHomeViewModel(provider: provider)
+        let id = "a807b7ab-6cad-4aa6-87d0-e283a7353a0f"
+        let viewModel = SPHHomeViewModel(id: id, provider: provider)
         navigator.show(segue: .sphHome(viewModel: viewModel), sender: nil, transition: .root(in: window))
     }
 }

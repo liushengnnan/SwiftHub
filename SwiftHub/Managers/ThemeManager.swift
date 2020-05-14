@@ -291,7 +291,7 @@ extension Reactive where Base: UINavigationBar {
 extension Reactive where Base: UIApplication {
 
     var statusBarStyle: Binder<UIStatusBarStyle> {
-        return Binder(self.base) { view, attr in
+        return Binder(self.base) { _, attr in
             globalStatusBarStyle.accept(attr)
         }
     }

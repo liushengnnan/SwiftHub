@@ -82,10 +82,10 @@ class SearchViewModel: ViewModel, ViewModelType {
         input.sortUserSelection.bind(to: sortUserItem).disposed(by: rx.disposeBag)
 
         Observable.combineLatest(keyword, currentLanguage, sortRepositoryItem)
-            .filter({ (keyword, currentLanguage, sortRepositoryItem) -> Bool in
+            .filter({ (keyword, currentLanguage, _) -> Bool in
                 return keyword.isNotEmpty || currentLanguage != nil
             })
-            .flatMapLatest({ [weak self] (keyword, currentLanguage, sortRepositoryItem) -> Observable<RxSwift.Event<RepositorySearch>> in
+            .flatMapLatest({ [weak self] (_, _, sortRepositoryItem) -> Observable<RxSwift.Event<RepositorySearch>> in
                 guard let self = self else { return Observable.just(RxSwift.Event.next(RepositorySearch())) }
                 self.repositoriesPage = 1
                 let query = self.makeQuery()
@@ -133,10 +133,10 @@ class SearchViewModel: ViewModel, ViewModelType {
         }).disposed(by: rx.disposeBag)
 
         Observable.combineLatest(keyword, currentLanguage, sortUserItem)
-            .filter({ (keyword, currentLanguage, sortRepositoryItem) -> Bool in
+            .filter({ (keyword, currentLanguage, _) -> Bool in
                 return keyword.isNotEmpty || currentLanguage != nil
             })
-            .flatMapLatest({ [weak self] (keyword, currentLanguage, sortUserItem) -> Observable<RxSwift.Event<UserSearch>> in
+            .flatMapLatest({ [weak self] (_, _, sortUserItem) -> Observable<RxSwift.Event<UserSearch>> in
                 guard let self = self else { return Observable.just(RxSwift.Event.next(UserSearch())) }
                 self.usersPage = 1
                 let query = self.makeQuery()

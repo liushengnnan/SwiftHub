@@ -38,11 +38,11 @@ class ThemeViewController: TableViewController {
         let output = viewModel.transform(input: input)
 
         output.items
-            .drive(tableView.rx.items(cellIdentifier: reuseIdentifier, cellType: ThemeCell.self)) { tableView, viewModel, cell in
+            .drive(tableView.rx.items(cellIdentifier: reuseIdentifier, cellType: ThemeCell.self)) { _, viewModel, cell in
                 cell.bind(to: viewModel)
             }.disposed(by: rx.disposeBag)
 
-        output.selected.drive(onNext: { [weak self] (cellViewModel) in
+        output.selected.drive(onNext: { [weak self] (_) in
             self?.navigator.dismiss(sender: self)
         }).disposed(by: rx.disposeBag)
     }

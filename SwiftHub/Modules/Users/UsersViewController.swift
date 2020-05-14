@@ -79,7 +79,7 @@ class UsersViewController: TableViewController {
         }).disposed(by: rx.disposeBag)
 
         output.items.asDriver(onErrorJustReturn: [])
-            .drive(tableView.rx.items(cellIdentifier: reuseIdentifier, cellType: UserCell.self)) { tableView, viewModel, cell in
+            .drive(tableView.rx.items(cellIdentifier: reuseIdentifier, cellType: UserCell.self)) { _, viewModel, cell in
                 cell.bind(to: viewModel)
             }.disposed(by: rx.disposeBag)
 

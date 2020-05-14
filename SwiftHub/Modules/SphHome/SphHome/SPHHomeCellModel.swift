@@ -17,8 +17,7 @@ class SPHHomeCellModel: DefaultTableViewCellViewModel {
         super.init()
         title.accept(record.year)
         detail.accept(record.volumeOfMobileData)
-        if record.decrease {
-            image.accept(R.image.icon_cell_git_branch()?.template)
-        }
+        image.accept(R.image.icon_cell_star()?.template)
+        hidesDisclosure.accept(!record.decrease)
     }
 }

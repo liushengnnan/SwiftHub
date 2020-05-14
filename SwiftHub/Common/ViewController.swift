@@ -116,27 +116,27 @@ class ViewController: UIViewController, Navigatable, NVActivityIndicatorViewable
         // Observe device orientation change
         NotificationCenter.default
             .rx.notification(UIDevice.orientationDidChangeNotification)
-            .subscribe { [weak self] (event) in
+            .subscribe { [weak self] (_) in
                 self?.orientationChanged()
             }.disposed(by: rx.disposeBag)
 
         // Observe application did become active notification
         NotificationCenter.default
             .rx.notification(UIApplication.didBecomeActiveNotification)
-            .subscribe { [weak self] (event) in
+            .subscribe { [weak self] (_) in
                 self?.didBecomeActive()
             }.disposed(by: rx.disposeBag)
 
         NotificationCenter.default
             .rx.notification(UIAccessibility.reduceMotionStatusDidChangeNotification)
-            .subscribe(onNext: { (event) in
+            .subscribe(onNext: { (_) in
                 logDebug("Motion Status changed")
             }).disposed(by: rx.disposeBag)
 
         // Observe application did change language notification
         NotificationCenter.default
             .rx.notification(NSNotification.Name(LCLLanguageChangeNotification))
-            .subscribe { [weak self] (event) in
+            .subscribe { [weak self] (_) in
                 self?.languageChanged.accept(())
             }.disposed(by: rx.disposeBag)
 

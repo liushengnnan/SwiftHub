@@ -132,12 +132,12 @@ class SettingsViewController: TableViewController {
                                                 message: R.string.localizable.settingsLogoutAlertMessage.key.localized(),
                                                 preferredStyle: UIAlertController.Style.alert)
         let logoutAction = UIAlertAction(title: R.string.localizable.settingsLogoutAlertConfirmButtonTitle.key.localized(),
-                                         style: .destructive) { [weak self] (result: UIAlertAction) in
+                                         style: .destructive) { [weak self] (_: UIAlertAction) in
             self?.logout()
         }
 
         let cancelAction = UIAlertAction(title: R.string.localizable.commonCancel.key.localized(),
-                                         style: .default) { (result: UIAlertAction) in
+                                         style: .default) { (_: UIAlertAction) in
         }
 
         alertController.addAction(cancelAction)

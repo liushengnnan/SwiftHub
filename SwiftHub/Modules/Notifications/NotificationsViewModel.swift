@@ -88,7 +88,7 @@ class NotificationsViewModel: ViewModel, ViewModelType {
                 return viewModel
             })
 
-        let navigationTitle = mode.map({ (mode) -> String in
+        let navigationTitle = mode.map({ (_) -> String in
             return R.string.localizable.notificationsNavigationTitle.key.localized()
         }).asDriver(onErrorJustReturn: "")
 

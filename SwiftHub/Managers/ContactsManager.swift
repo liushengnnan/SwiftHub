@@ -51,7 +51,7 @@ class ContactsManager: NSObject {
                 let contactFetchRequest = CNContactFetchRequest(keysToFetch: self.allowedContactKeys())
                 contactFetchRequest.sortOrder = .givenName
                 do {
-                    try self.contactsStore.enumerateContacts(with: contactFetchRequest, usingBlock: { (contact, stop) -> Void in
+                    try self.contactsStore.enumerateContacts(with: contactFetchRequest, usingBlock: { (contact, _) -> Void in
                         contactsArray.append(contact)
                     })
 

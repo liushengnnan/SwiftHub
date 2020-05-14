@@ -183,6 +183,8 @@
 		2C10712F246C4A4D003FF1B3 /* Sph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C10712E246C4A4D003FF1B3 /* Sph.swift */; };
 		2C107132246CE75D003FF1B3 /* SPHHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C107130246CE75D003FF1B3 /* SPHHomeCell.swift */; };
 		2C107133246CE75D003FF1B3 /* SPHHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C107131246CE75D003FF1B3 /* SPHHomeCell.xib */; };
+		2CA9404D246D4F260034E346 /* SphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA9404C246D4F260034E346 /* SphTests.swift */; };
+		2CA94050246D8D190034E346 /* SPHHomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA9404F246D8D190034E346 /* SPHHomeViewModelTests.swift */; };
 		A00871CF21A6E2BD006E5A2B /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00871CE21A6E2BD006E5A2B /* Comment.swift */; };
 		A00C54C920E25B5A00DA5F98 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00C54C820E25B5A00DA5F98 /* StackView.swift */; };
 		A017B3DB1E92995300E4FCED /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A017B3DA1E92995300E4FCED /* SplitViewController.swift */; };
@@ -499,6 +501,8 @@
 		2C10712E246C4A4D003FF1B3 /* Sph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sph.swift; sourceTree = "<group>"; };
 		2C107130246CE75D003FF1B3 /* SPHHomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SPHHomeCell.swift; path = SphHome/SPHHomeCell.swift; sourceTree = "<group>"; };
 		2C107131246CE75D003FF1B3 /* SPHHomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SPHHomeCell.xib; path = SphHome/SPHHomeCell.xib; sourceTree = "<group>"; };
+		2CA9404C246D4F260034E346 /* SphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SphTests.swift; sourceTree = "<group>"; };
+		2CA9404F246D8D190034E346 /* SPHHomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SPHHomeViewModelTests.swift; path = SPH/SPHHomeViewModelTests.swift; sourceTree = "<group>"; };
 		3796635402BD18001EDA5A16 /* Pods-SwiftHubUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftHubUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftHubUITests/Pods-SwiftHubUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3843260FF1EFDD3029A69CCB /* Pods-SwiftHubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftHubTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftHubTests/Pods-SwiftHubTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3E6D5D7DF286987ECF4F8FDD /* Pods_SwiftHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -648,6 +652,7 @@
 			isa = PBXGroup;
 			children = (
 				0709DD79220A1CA800F379FA /* UserTests.swift */,
+				2CA9404C246D4F260034E346 /* SphTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1077,6 +1082,14 @@
 			path = SphHome;
 			sourceTree = "<group>";
 		};
+		2CA9404E246D8CB90034E346 /* SPH */ = {
+			isa = PBXGroup;
+			children = (
+				2CA9404F246D8D190034E346 /* SPHHomeViewModelTests.swift */,
+			);
+			path = SPH;
+			sourceTree = "<group>";
+		};
 		79C12BEBBA00E394217F8296 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1299,6 +1312,7 @@
 		A0AEB3A4220D8CAD00A4B2AA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				2CA9404E246D8CB90034E346 /* SPH */,
 				A0AEB3A5220D8CDE00A4B2AA /* Users */,
 			);
 			path = Modules;
@@ -2157,6 +2171,8 @@
 				0709DD7A220A1CA800F379FA /* UserTests.swift in Sources */,
 				A0AEB3A7220D8FC300A4B2AA /* UsersViewModelTests.swift in Sources */,
 				A094996B1E1D1CB700EFDE29 /* SwiftHubTests.swift in Sources */,
+				2CA9404D246D4F260034E346 /* SphTests.swift in Sources */,
+				2CA94050246D8D190034E346 /* SPHHomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2342,7 +2358,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.public.SwiftHub;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftHub;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -2360,7 +2376,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.public.SwiftHub;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftHub;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

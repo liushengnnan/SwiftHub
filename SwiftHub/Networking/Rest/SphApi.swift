@@ -37,7 +37,7 @@ extension SphApi: TargetType, ProductAPIType {
     public var headers: [String: String]? {
         return nil
     }
-    
+
     public var parameters: [String: Any]? {
         var params: [String: Any] = [:]
         switch self {

@@ -24,7 +24,7 @@ extension UIView {
         var image: UIImage?
         if #available(iOS 10.0, *) {
             let renderer = UIGraphicsImageRenderer(size: self.bounds.size)
-            image = renderer.image { ctx in
+            image = renderer.image { _ in
                 self.drawHierarchy(in: self.bounds, afterScreenUpdates: true)
             }
         } else {

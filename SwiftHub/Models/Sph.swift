@@ -18,40 +18,40 @@ struct YearRecord {
     init(records: [Record], year: String?) {
         self.quarters = records
         self.year = year
-        var sum: Float = 0
+        var sum: NSDecimalNumber = 0
         var increase = true
-        var pre: Float = -1
+        var pre: NSDecimalNumber = 0
         for record in records {
-            let val = Float(record.volumeOfMobileData!) ?? 0
-            increase = increase && (val > pre)
+            let val = record.volume
+            increase = increase && pre.compare(val) == .orderedAscending
             pre = val
-            sum += val
+            sum = sum.adding(val)
         }
-        self.volumeOfMobileData = String(sum)
+        self.volumeOfMobileData = sum.description
         self.decrease = !increase
     }
-    
+
+//    static func convertToYearRecords(records: [Record]) -> [YearRecord] {
+//        var dic: [String: [Record]] = [:]
+//        for record in records {
+//            let year = String(record.quarter?.prefix(4) ?? "")
+//            if var tmp = dic[year] {
+//                tmp.append(record)
+//            } else {
+//                dic[year] = [record]
+//            }
+//        }
+//        var yearRecords: [YearRecord] = []
+//        for (year, quarters) in dic {
+//            let yearRecord = YearRecord(records: quarters, year: year)
+//            yearRecords.append(yearRecord)
+//        }
+//        return yearRecords
+//    }
+
     static func convertToYearRecords(records: [Record]) -> [YearRecord] {
-        var dic: [String: [Record]] = [:]
-        for record in records {
-            let year = String(record.quarter?.prefix(4) ?? "")
-            if var tmp = dic[year] {
-                tmp.append(record)
-            } else {
-                dic[year] = [record]
-            }
-        }
-        var yearRecords : [YearRecord] = []
-        for (year, quarters) in dic {
-            let yearRecord = YearRecord(records: quarters, year: year)
-            yearRecords.append(yearRecord)
-        }
-        return yearRecords
-    }
-    
-    static func convertToYearRecords2(records: [Record]) -> [YearRecord] {
         var tmpRecords: [Record] = []
-        var yearRecords : [YearRecord] = []
+        var yearRecords: [YearRecord] = []
         var tmpYear = ""
         for record in records {
             let year = String(record.quarter?.prefix(4) ?? "")
@@ -75,7 +75,9 @@ struct Record: Mappable {
     var id: Int?
     var quarter: String?
     var volumeOfMobileData: String?
-
+    var volume: NSDecimalNumber {
+        return NSDecimalNumber(string: volumeOfMobileData)
+    }
     init?(map: Map) {}
     init() {}
 
@@ -89,7 +91,7 @@ struct Record: Mappable {
 struct SphResult: Mappable {
     var resourceId: String?
     var records: [Record]?
-    
+
     init?(map: Map) {}
     init() {}
 

@@ -159,6 +159,7 @@ extension NetworkingType {
             do {
                 var request = try endpoint.urlRequest() // endpoint.urlRequest
                 request.httpShouldHandleCookies = false
+                request.cachePolicy = .returnCacheDataElseLoad
                 closure(.success(request))
             } catch {
                 logError(error.localizedDescription)

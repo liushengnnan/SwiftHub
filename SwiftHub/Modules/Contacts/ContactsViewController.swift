@@ -51,7 +51,7 @@ class ContactsViewController: TableViewController {
         viewModel.loading.asObservable().bind(to: isLoading).disposed(by: rx.disposeBag)
 
         output.items
-            .drive(tableView.rx.items(cellIdentifier: reuseIdentifier, cellType: ContactCell.self)) { tableView, viewModel, cell in
+            .drive(tableView.rx.items(cellIdentifier: reuseIdentifier, cellType: ContactCell.self)) { _, viewModel, cell in
                 cell.bind(to: viewModel)
             }.disposed(by: rx.disposeBag)
 
