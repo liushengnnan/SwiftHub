@@ -53,8 +53,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 
         // Show initial screen
+        window = UIWindow(frame: UIScreen.main.bounds)
         Application.shared.presentInitialScreen(in: window!)
-
+        window?.makeKeyAndVisible()
         return true
     }
 

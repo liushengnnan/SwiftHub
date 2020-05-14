@@ -26,30 +26,6 @@ class Navigator {
     // MARK: - segues list, all app scenes
     enum Scene {
         case sphHome(viewModel: SPHHomeViewModel)
-        case tabs(viewModel: HomeTabBarViewModel)
-        case search(viewModel: SearchViewModel)
-        case languages(viewModel: LanguagesViewModel)
-        case users(viewModel: UsersViewModel)
-        case userDetails(viewModel: UserViewModel)
-        case repositories(viewModel: RepositoriesViewModel)
-        case repositoryDetails(viewModel: RepositoryViewModel)
-        case contents(viewModel: ContentsViewModel)
-        case source(viewModel: SourceViewModel)
-        case commits(viewModel: CommitsViewModel)
-        case branches(viewModel: BranchesViewModel)
-        case releases(viewModel: ReleasesViewModel)
-        case pullRequests(viewModel: PullRequestsViewModel)
-        case pullRequestDetails(viewModel: PullRequestViewModel)
-        case events(viewModel: EventsViewModel)
-        case notifications(viewModel: NotificationsViewModel)
-        case issues(viewModel: IssuesViewModel)
-        case issueDetails(viewModel: IssueViewModel)
-        case linesCount(viewModel: LinesCountViewModel)
-        case theme(viewModel: ThemeViewModel)
-        case language(viewModel: LanguageViewModel)
-        case acknowledgements
-        case contacts(viewModel: ContactsViewModel)
-        case whatsNew(block: WhatsNewBlock)
         case safari(URL)
         case safariController(URL)
         case webController(URL)
@@ -72,45 +48,6 @@ class Navigator {
             let homeVC = SPHHomeViewController(viewModel: viewModel, navigator: self)
             let nvc = NavigationController(rootViewController: homeVC)
             return nvc
-
-        case .tabs(let viewModel):
-            let rootVC = HomeTabBarController(viewModel: viewModel, navigator: self)
-            let detailVC = InitialSplitViewController(viewModel: nil, navigator: self)
-            let detailNavVC = NavigationController(rootViewController: detailVC)
-            let splitVC = SplitViewController()
-            splitVC.viewControllers = [rootVC, detailNavVC]
-            return splitVC
-
-        case .search(let viewModel): return SearchViewController(viewModel: viewModel, navigator: self)
-        case .languages(let viewModel): return LanguagesViewController(viewModel: viewModel, navigator: self)
-        case .users(let viewModel): return UsersViewController(viewModel: viewModel, navigator: self)
-        case .userDetails(let viewModel): return UserViewController(viewModel: viewModel, navigator: self)
-        case .repositories(let viewModel): return RepositoriesViewController(viewModel: viewModel, navigator: self)
-        case .repositoryDetails(let viewModel): return RepositoryViewController(viewModel: viewModel, navigator: self)
-        case .contents(let viewModel): return ContentsViewController(viewModel: viewModel, navigator: self)
-        case .source(let viewModel): return SourceViewController(viewModel: viewModel, navigator: self)
-        case .commits(let viewModel): return CommitsViewController(viewModel: viewModel, navigator: self)
-        case .branches(let viewModel): return BranchesViewController(viewModel: viewModel, navigator: self)
-        case .releases(let viewModel): return ReleasesViewController(viewModel: viewModel, navigator: self)
-        case .pullRequests(let viewModel): return PullRequestsViewController(viewModel: viewModel, navigator: self)
-        case .pullRequestDetails(let viewModel): return PullRequestViewController(viewModel: viewModel, navigator: self)
-        case .events(let viewModel): return EventsViewController(viewModel: viewModel, navigator: self)
-        case .notifications(let viewModel): return NotificationsViewController(viewModel: viewModel, navigator: self)
-        case .issues(let viewModel): return IssuesViewController(viewModel: viewModel, navigator: self)
-        case .issueDetails(let viewModel): return IssueViewController(viewModel: viewModel, navigator: self)
-        case .linesCount(let viewModel): return LinesCountViewController(viewModel: viewModel, navigator: self)
-        case .theme(let viewModel): return ThemeViewController(viewModel: viewModel, navigator: self)
-        case .language(let viewModel): return LanguageViewController(viewModel: viewModel, navigator: self)
-        case .acknowledgements: return AcknowListViewController()
-        case .contacts(let viewModel): return ContactsViewController(viewModel: viewModel, navigator: self)
-
-        case .whatsNew(let block):
-            if let versionStore = block.2 {
-                return WhatsNewViewController(whatsNew: block.0, configuration: block.1, versionStore: versionStore)
-            } else {
-                return WhatsNewViewController(whatsNew: block.0, configuration: block.1)
-            }
-
         case .safari(let url):
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
             return nil
