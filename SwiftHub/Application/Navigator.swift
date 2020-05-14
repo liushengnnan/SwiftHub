@@ -135,11 +135,4 @@ class Navigator {
         default: break
         }
     }
-
-    func toInviteContact(withPhone phone: String) -> MFMessageComposeViewController {
-        let vc = MFMessageComposeViewController()
-        vc.body = "Hey! Come join SwiftHub at \(Configs.App.githubUrl)"
-        vc.recipients = [phone]
-        return vc
-    }
 }

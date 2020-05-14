@@ -24,7 +24,7 @@ class SPHHomeViewController: TableViewController {
         super.makeUI()
 
         languageChanged.subscribe(onNext: { [weak self] () in
-            self?.title = R.string.localizable.settingsNavigationTitle.key.localized()
+            self?.title = R.string.localizable.sphHome.key.localized()
         }).disposed(by: rx.disposeBag)
 
         tableView.register(R.nib.sphHomeCell)

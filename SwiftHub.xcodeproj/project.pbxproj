@@ -10,7 +10,6 @@
 		070FF84020F2250F0070F5E8 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 070FF83F20F2250F0070F5E8 /* User.json */; };
 		070FF84220F225200070F5E8 /* Organization.json in Resources */ = {isa = PBXBuildFile; fileRef = 070FF84120F225200070F5E8 /* Organization.json */; };
 		07178A61220F581C0020AE12 /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07178A60220F581C0020AE12 /* Toolbar.swift */; };
-		071F761B21C6756D003EEB35 /* WhatsNewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071F761A21C6756D003EEB35 /* WhatsNewManager.swift */; };
 		0722DB1C22BF779F00C32A01 /* DefaultTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0722DB1B22BF779F00C32A01 /* DefaultTableViewCellViewModel.swift */; };
 		07241D0521B1740000F800BD /* RepositoryCommits.json in Resources */ = {isa = PBXBuildFile; fileRef = 07241D0421B1740000F800BD /* RepositoryCommits.json */; };
 		07241D0721B1741800F800BD /* RepositoryCommit.json in Resources */ = {isa = PBXBuildFile; fileRef = 07241D0621B1741800F800BD /* RepositoryCommit.json */; };
@@ -166,7 +165,6 @@
 		070FF83F20F2250F0070F5E8 /* User.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
 		070FF84120F225200070F5E8 /* Organization.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Organization.json; sourceTree = "<group>"; };
 		07178A60220F581C0020AE12 /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
-		071F761A21C6756D003EEB35 /* WhatsNewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewManager.swift; sourceTree = "<group>"; };
 		0722DB1B22BF779F00C32A01 /* DefaultTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		07241D0421B1740000F800BD /* RepositoryCommits.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositoryCommits.json; sourceTree = "<group>"; };
 		07241D0621B1741800F800BD /* RepositoryCommit.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositoryCommit.json; sourceTree = "<group>"; };
@@ -186,8 +184,6 @@
 		074DBBED2448A0480062B35F /* RepositoryNumberOfLines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RepositoryNumberOfLines.json; sourceTree = "<group>"; };
 		0751F7A9246B044800E42751 /* TableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModel.swift; sourceTree = "<group>"; };
 		0757B53B2166A6A000C04163 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		0757B53D2166A6C300C04163 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		0757B53E2166A6E900C04163 /* hy */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hy; path = hy.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0758D7DF2222C20200E99DDD /* UserRepositoriesWatching.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UserRepositoriesWatching.json; sourceTree = "<group>"; };
 		075A55CE228845F8004DF9F7 /* RepositoryPullRequestComments.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositoryPullRequestComments.json; sourceTree = "<group>"; };
 		075A55D0228850A5004DF9F7 /* RepositoryIssue.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositoryIssue.json; sourceTree = "<group>"; };
@@ -210,7 +206,6 @@
 		07DFF6D420E90574004DAA68 /* UserSearch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserSearch.json; sourceTree = "<group>"; };
 		07DFF6D620E90584004DAA68 /* RepositorySearch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositorySearch.json; sourceTree = "<group>"; };
 		07E1B30921A4538B00F6EAE3 /* RepositoryIssues.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositoryIssues.json; sourceTree = "<group>"; };
-		07EC7CF521DE248B00EC1635 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		07F9E4612234010C0012BA6D /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		07F9E463223401F30012BA6D /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		07F9E466223405410012BA6D /* RestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApi.swift; sourceTree = "<group>"; };
@@ -488,7 +483,6 @@
 				07FC337C1FFFE4E300D53888 /* LogManager.swift */,
 				C762C68E1E1D5D6E00C09EBD /* Reachability.swift */,
 				07CE0F7F21027DEC00E1F6BD /* ThemeManager.swift */,
-				071F761A21C6756D003EEB35 /* WhatsNewManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -705,6 +699,7 @@
 		C762C64F1E1D559000C09EBD /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A09DE8CA20E7BE9B00F6F2BF /* Table View Cells */,
 				C762C6501E1D559000C09EBD /* BarButtonItem.swift */,
 				C762C6511E1D559000C09EBD /* Button.swift */,
 				C762C6521E1D559000C09EBD /* CollectionView.swift */,
@@ -721,7 +716,6 @@
 				A017B3DA1E92995300E4FCED /* SplitViewController.swift */,
 				A00C54C820E25B5A00DA5F98 /* StackView.swift */,
 				A0E2B08C2106293A000DA282 /* Switch.swift */,
-				A09DE8CA20E7BE9B00F6F2BF /* Table View Cells */,
 				C762C6591E1D559000C09EBD /* TableView.swift */,
 				C762C65B1E1D559000C09EBD /* TableViewController.swift */,
 				C762C65C1E1D559000C09EBD /* TextField.swift */,
@@ -878,7 +872,7 @@
 				TargetAttributes = {
 					A09499511E1D1CB600EFDE29 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = RE853S4FBU;
+						DevelopmentTeam = 6AKV92UWJP;
 						LastSwiftMigration = 1100;
 						ProvisioningStyle = Automatic;
 					};
@@ -903,10 +897,7 @@
 			knownRegions = (
 				en,
 				Base,
-				ru,
-				hy,
 				"zh-Hans",
-				it,
 			);
 			mainGroup = A09499491E1D1CB500EFDE29;
 			productRefGroup = A09499531E1D1CB600EFDE29 /* Products */;
@@ -1277,7 +1268,6 @@
 				07FC337E1FFFE4E300D53888 /* LibsManager.swift in Sources */,
 				C762C6601E1D559000C09EBD /* Button.swift in Sources */,
 				A09DE8E120EB9B2500F6F2BF /* SlideImageView.swift in Sources */,
-				071F761B21C6756D003EEB35 /* WhatsNewManager.swift in Sources */,
 				2C10711D246C2326003FF1B3 /* SPHHomeViewController.swift in Sources */,
 				07FC337F1FFFE4E300D53888 /* LogManager.swift in Sources */,
 				07FC33871FFFE68800D53888 /* Api.swift in Sources */,
@@ -1377,10 +1367,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0757B53B2166A6A000C04163 /* en */,
-				0757B53D2166A6C300C04163 /* ru */,
-				0757B53E2166A6E900C04163 /* hy */,
 				079E1AE121CC0D1D00C9448B /* zh-Hans */,
-				07EC7CF521DE248B00EC1635 /* it */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1508,7 +1495,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 28;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = RE853S4FBU;
+				DEVELOPMENT_TEAM = 6AKV92UWJP;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SwiftHub/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -1526,7 +1513,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 28;
-				DEVELOPMENT_TEAM = RE853S4FBU;
+				DEVELOPMENT_TEAM = 6AKV92UWJP;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SwiftHub/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

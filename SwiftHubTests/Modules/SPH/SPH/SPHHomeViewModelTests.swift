@@ -18,10 +18,7 @@ class SPHHomeViewModelTests: QuickSpec {
         var disposeBag: DisposeBag!
 
         beforeEach {
-            provider = RestApi(githubProvider: GithubNetworking.stubbingNetworking(),
-                               trendingGithubProvider: TrendingGithubNetworking.stubbingNetworking(),
-                               codetabsProvider: CodetabsNetworking.stubbingNetworking(),
-                               sphProvider: SphNetworking.stubbingNetworking())
+            provider = RestApi(sphProvider: SphNetworking.stubbingNetworking())
             disposeBag = DisposeBag()
         }
 
