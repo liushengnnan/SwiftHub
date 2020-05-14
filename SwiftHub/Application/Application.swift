@@ -29,7 +29,8 @@ final class Application: NSObject {
         let githubProvider = staging ? GithubNetworking.stubbingNetworking(): GithubNetworking.defaultNetworking()
         let trendingGithubProvider = staging ? TrendingGithubNetworking.stubbingNetworking(): TrendingGithubNetworking.defaultNetworking()
         let codetabsProvider = staging ? CodetabsNetworking.stubbingNetworking(): CodetabsNetworking.defaultNetworking()
-        let restApi = RestApi(githubProvider: githubProvider, trendingGithubProvider: trendingGithubProvider, codetabsProvider: codetabsProvider)
+        let sphProvider = staging ? SphNetworking.stubbingNetworking(): SphNetworking.defaultNetworking()
+        let restApi = RestApi(githubProvider: githubProvider, trendingGithubProvider: trendingGithubProvider, codetabsProvider: codetabsProvider, sphProvider: sphProvider)
         provider = restApi
 
         if let token = authManager.token, Configs.Network.useStaging == false {
@@ -46,24 +47,24 @@ final class Application: NSObject {
         guard let window = window, let provider = provider else { return }
         self.window = window
 
-//        presentTestScreen(in: window)
-//        return
+        presentTestScreen(in: window)
+////        return
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            if let user = User.currentUser(), let login = user.login {
-                analytics.identify(userId: login)
-                analytics.set(.name(value: user.name ?? ""))
-                analytics.set(.email(value: user.email ?? ""))
-            }
-
-            let viewModel = HomeTabBarViewModel(provider: provider)
-            self.navigator.show(segue: .tabs(viewModel: viewModel), sender: nil, transition: .root(in: window))
-        }
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+//            if let user = User.currentUser(), let login = user.login {
+//                analytics.identify(userId: login)
+//                analytics.set(.name(value: user.name ?? ""))
+//                analytics.set(.email(value: user.email ?? ""))
+//            }
+//
+//            let viewModel = HomeTabBarViewModel(provider: provider)
+//            self.navigator.show(segue: .tabs(viewModel: viewModel), sender: nil, transition: .root(in: window))
+//        }
     }
 
     func presentTestScreen(in window: UIWindow?) {
         guard let window = window, let provider = provider else { return }
-        let viewModel = UserViewModel(user: User(), provider: provider)
-        navigator.show(segue: .userDetails(viewModel: viewModel), sender: nil, transition: .root(in: window))
+        let viewModel = SPHHomeViewModel(provider: provider)
+        navigator.show(segue: .sphHome(viewModel: viewModel), sender: nil, transition: .root(in: window))
     }
 }

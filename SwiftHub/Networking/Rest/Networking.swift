@@ -59,6 +59,24 @@ protocol NetworkingType {
     static func stubbingNetworking() -> Self
 }
 
+struct SphNetworking: NetworkingType {
+    typealias T = SphApi
+    let provider: OnlineProvider<T>
+
+    static func defaultNetworking() -> Self {
+        return SphNetworking(provider: newProvider(plugins))
+    }
+
+    static func stubbingNetworking() -> Self {
+        return SphNetworking(provider: OnlineProvider(endpointClosure: endpointsClosure(), requestClosure: GithubNetworking.endpointResolver(), stubClosure: MoyaProvider.immediatelyStub, online: .just(true)))
+    }
+
+    func request(_ token: T) -> Observable<Moya.Response> {
+        let actualRequest = self.provider.request(token)
+        return actualRequest
+    }
+}
+
 struct GithubNetworking: NetworkingType {
     typealias T = GithubAPI
     let provider: OnlineProvider<T>

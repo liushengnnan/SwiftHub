@@ -262,6 +262,12 @@ extension GraphApi {
 }
 
 extension GraphApi {
+    func datastoreSearch(id: String, limit: Int?, quary: String?) -> Single<Sph> {
+        return restApi.datastoreSearch(id: id, limit: limit, quary: quary)
+    }
+}
+
+extension GraphApi {
     private func ownerName(from fullname: String) -> String {
         return fullname.components(separatedBy: "/").first ?? ""
     }

@@ -25,6 +25,7 @@ class Navigator {
 
     // MARK: - segues list, all app scenes
     enum Scene {
+        case sphHome(viewModel: SPHHomeViewModel)
         case tabs(viewModel: HomeTabBarViewModel)
         case search(viewModel: SearchViewModel)
         case languages(viewModel: LanguagesViewModel)
@@ -67,6 +68,11 @@ class Navigator {
     // MARK: - get a single VC
     func get(segue: Scene) -> UIViewController? {
         switch segue {
+        case .sphHome(let viewModel):
+            let homeVC = SPHHomeViewController(viewModel: viewModel, navigator: self)
+            let nvc = NavigationController(rootViewController: homeVC)
+            return nvc
+            
         case .tabs(let viewModel):
             let rootVC = HomeTabBarController(viewModel: viewModel, navigator: self)
             let detailVC = InitialSplitViewController(viewModel: nil, navigator: self)

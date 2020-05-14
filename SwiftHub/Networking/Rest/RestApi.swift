@@ -25,11 +25,13 @@ class RestApi: SwiftHubAPI {
     let githubProvider: GithubNetworking
     let trendingGithubProvider: TrendingGithubNetworking
     let codetabsProvider: CodetabsNetworking
+    let sphProvider: SphNetworking
 
-    init(githubProvider: GithubNetworking, trendingGithubProvider: TrendingGithubNetworking, codetabsProvider: CodetabsNetworking) {
+    init(githubProvider: GithubNetworking, trendingGithubProvider: TrendingGithubNetworking, codetabsProvider: CodetabsNetworking, sphProvider: SphNetworking) {
         self.githubProvider = githubProvider
         self.trendingGithubProvider = trendingGithubProvider
         self.codetabsProvider = codetabsProvider
+        self.sphProvider = sphProvider
     }
 }
 
@@ -336,5 +338,32 @@ extension RestApi {
             .mapArray(T.self)
             .observeOn(MainScheduler.instance)
             .asSingle()
+    }
+}
+
+extension RestApi {
+    private func sphRequestArray<T: BaseMappable>(_ target: SphApi, type: T.Type) -> Single<[T]> {
+        return sphProvider.request(target)
+            .mapArray(T.self)
+            .observeOn(MainScheduler.instance)
+            .asSingle()
+    }
+    private func sphRequestObject<T: BaseMappable>(_ target: SphApi, type: T.Type) -> Single<T> {
+        return sphProvider.request(target)
+            .mapObject(T.self)
+            .observeOn(MainScheduler.instance)
+            .asSingle()
+    }
+    private func request(_ target: SphApi) -> Single<Any> {
+        return sphProvider.request(target)
+            .mapJSON()
+            .observeOn(MainScheduler.instance)
+            .asSingle()
+    }
+}
+
+extension RestApi: SphApiProtocol {
+    func datastoreSearch(id: String, limit: Int?, quary: String?) -> Single<Sph> {
+        return sphRequestObject(.datastoreSearch(id: id, limit: limit, quary: quary), type: Sph.self)
     }
 }

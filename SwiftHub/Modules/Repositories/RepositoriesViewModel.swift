@@ -118,6 +118,9 @@ class RepositoriesViewModel: ViewModel, ViewModelType {
         return request
             .trackActivity(loading)
             .trackError(error)
-            .map { $0.map { RepositoryCellViewModel(with: $0) } }
+            .map { $0.map {
+                RepositoryCellViewModel(with: $0)
+                }
+        }
     }
 }

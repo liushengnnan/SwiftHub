@@ -10,7 +10,12 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-protocol SwiftHubAPI {
+protocol SphApiProtocol {
+    // MARK: - SPH
+    func datastoreSearch(id: String, limit: Int?, quary: String?) -> Single<Sph>
+}
+
+protocol SwiftHubAPI: SphApiProtocol {
     func downloadString(url: URL) -> Single<String>
     func downloadFile(url: URL, fileName: String?) -> Single<Void>
 

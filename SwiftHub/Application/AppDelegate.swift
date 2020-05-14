@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let libsManager = LibsManager.shared
         libsManager.setupLibs(with: window)
+        libsManager.bannersEnabled.accept(false)
 
         if Configs.Network.useStaging == true {
             // Logout
