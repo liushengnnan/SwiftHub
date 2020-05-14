@@ -31,24 +31,6 @@ struct YearRecord {
         self.decrease = !increase
     }
 
-//    static func convertToYearRecords(records: [Record]) -> [YearRecord] {
-//        var dic: [String: [Record]] = [:]
-//        for record in records {
-//            let year = String(record.quarter?.prefix(4) ?? "")
-//            if var tmp = dic[year] {
-//                tmp.append(record)
-//            } else {
-//                dic[year] = [record]
-//            }
-//        }
-//        var yearRecords: [YearRecord] = []
-//        for (year, quarters) in dic {
-//            let yearRecord = YearRecord(records: quarters, year: year)
-//            yearRecords.append(yearRecord)
-//        }
-//        return yearRecords
-//    }
-
     static func convertToYearRecords(records: [Record]) -> [YearRecord] {
         var tmpRecords: [Record] = []
         var yearRecords: [YearRecord] = []

@@ -26,10 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         libsManager.bannersEnabled.accept(false)
 
         if Configs.Network.useStaging == true {
-            // Logout
-            User.removeCurrentUser()
-            AuthManager.removeToken()
-
             // Use Green Dark theme
             var theme = ThemeType.currentTheme()
             if theme.isDark != true {
