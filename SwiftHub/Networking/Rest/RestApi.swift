@@ -20,7 +20,7 @@ enum ApiError: Error {
     case serverError(response: ErrorResponse)
 }
 
-class RestApi: SwiftHubAPI {
+class RestApi: NetAPI {
     let sphProvider: SphNetworking
 
     init(sphProvider: SphNetworking) {

@@ -20,7 +20,7 @@ protocol ViewModelType {
 
 class ViewModel: NSObject {
 
-    let provider: SwiftHubAPI
+    let provider: NetAPI
 
     var page = 1
 
@@ -31,7 +31,7 @@ class ViewModel: NSObject {
     let error = ErrorTracker()
     let parsedError = PublishSubject<ApiError>()
 
-    init(provider: SwiftHubAPI) {
+    init(provider: NetAPI) {
         self.provider = provider
         super.init()
 

@@ -15,6 +15,6 @@ protocol SphApiProtocol {
     func datastoreSearch(id: String, limit: Int?, quary: String?) -> Single<Sph>
 }
 
-protocol SwiftHubAPI: SphApiProtocol {
+protocol NetAPI: SphApiProtocol {
     // Add More ApiProtocol
 }

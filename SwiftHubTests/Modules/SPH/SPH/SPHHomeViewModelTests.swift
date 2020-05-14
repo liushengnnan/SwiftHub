@@ -14,7 +14,7 @@ import RxSwift
 class SPHHomeViewModelTests: QuickSpec {
     override func spec() {
         var viewModel: SPHHomeViewModel!
-        var provider: SwiftHubAPI!  // used stubbing responses
+        var provider: NetAPI!  // used stubbing responses
         var disposeBag: DisposeBag!
 
         beforeEach {

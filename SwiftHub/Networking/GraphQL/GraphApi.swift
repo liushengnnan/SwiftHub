@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 import Apollo
 
-class GraphApi: SwiftHubAPI {
+class GraphApi: NetAPI {
 
     let restApi: RestApi
     let token: String

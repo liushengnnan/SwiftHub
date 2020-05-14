@@ -14,7 +14,7 @@ import RxDataSources
 class SPHHomeViewModel: ViewModel, ViewModelType {
     var id = "a807b7ab-6cad-4aa6-87d0-e283a7353a0f"
 
-    init(id: String, provider: SwiftHubAPI) {
+    init(id: String, provider: NetAPI) {
         self.id = id
         super.init(provider: provider)
     }

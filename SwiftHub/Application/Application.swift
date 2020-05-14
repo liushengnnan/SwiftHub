@@ -13,7 +13,7 @@ final class Application: NSObject {
 
     var window: UIWindow?
 
-    var provider: SwiftHubAPI?
+    var provider: NetAPI?
     let navigator: Navigator
 
     private override init() {
