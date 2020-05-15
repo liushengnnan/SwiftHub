@@ -4,7 +4,6 @@
 //
 //  Created by shengnan liu on 13/5/20.
 
-//
 
 import Foundation
 import Moya
@@ -13,7 +12,7 @@ public enum SphApi {
     case datastoreSearch(id: String, limit: Int?, quary: String?)
 }
 
-extension SphApi: TargetType, ProductAPIType {
+extension SphApi: TargetType {
     public var baseURL: URL {
         return URL(string: "https://data.gov.sg")!
     }
@@ -58,11 +57,5 @@ extension SphApi: TargetType, ProductAPIType {
             return data
         }
         return Data()
-    }
-
-    var addXAuth: Bool {
-        switch self {
-        default: return false
-        }
     }
 }

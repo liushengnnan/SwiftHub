@@ -11,14 +11,9 @@ import Moya
 import RxSwift
 import Alamofire
 
-protocol ProductAPIType {
-    var addXAuth: Bool { get }
-}
-
 class OnlineProvider<Target> where Target: Moya.TargetType {
     fileprivate let online: Observable<Bool>
     fileprivate let provider: MoyaProvider<Target>
-
     init(endpointClosure: @escaping MoyaProvider<Target>.EndpointClosure = MoyaProvider<Target>.defaultEndpointMapping,
          requestClosure: @escaping MoyaProvider<Target>.RequestClosure = MoyaProvider<Target>.defaultRequestMapping,
          stubClosure: @escaping MoyaProvider<Target>.StubClosure = MoyaProvider<Target>.neverStub,
@@ -45,7 +40,7 @@ class OnlineProvider<Target> where Target: Moya.TargetType {
                             case .statusCode(let response):
                                 if response.statusCode == 401 {
                                     // Unauthorized
-//                                    AuthManager.removeToken()
+                                    //                                    AuthManager.removeToken()
                                 }
                             default: break
                             }
@@ -56,9 +51,8 @@ class OnlineProvider<Target> where Target: Moya.TargetType {
 }
 
 protocol NetworkingType {
-    associatedtype T: TargetType, ProductAPIType
+    associatedtype T: TargetType
     var provider: OnlineProvider<T> { get }
-
     static func defaultNetworking() -> Self
     static func stubbingNetworking() -> Self
 }
@@ -66,15 +60,12 @@ protocol NetworkingType {
 struct SphNetworking: NetworkingType {
     typealias T = SphApi
     let provider: OnlineProvider<T>
-
     static func defaultNetworking() -> Self {
         return SphNetworking(provider: newProvider(plugins))
     }
-
     static func stubbingNetworking() -> Self {
         return SphNetworking(provider: OnlineProvider(endpointClosure: endpointsClosure(), requestClosure: SphNetworking.endpointResolver(), stubClosure: MoyaProvider.immediatelyStub, online: .just(true)))
     }
-
     func request(_ token: T) -> Observable<Moya.Response> {
         let actualRequest = self.provider.request(token)
         return actualRequest
@@ -82,7 +73,7 @@ struct SphNetworking: NetworkingType {
 }
 
 extension NetworkingType {
-    static func endpointsClosure<T>(_ xAccessToken: String? = nil) -> (T) -> Endpoint where T: TargetType, T: ProductAPIType {
+    static func endpointsClosure<T>(_ xAccessToken: String? = nil) -> (T) -> Endpoint where T: TargetType {
         return { target in
             let endpoint = MoyaProvider.defaultEndpointMapping(for: target)
 
@@ -118,7 +109,7 @@ extension NetworkingType {
     }
 }
 
-private func newProvider<T>(_ plugins: [PluginType], xAccessToken: String? = nil) -> OnlineProvider<T> where T: ProductAPIType {
+private func newProvider<T>(_ plugins: [PluginType], xAccessToken: String? = nil) -> OnlineProvider<T> {
     return OnlineProvider(endpointClosure: SphNetworking.endpointsClosure(xAccessToken),
                           requestClosure: SphNetworking.endpointResolver(),
                           stubClosure: SphNetworking.APIKeysBasedStubBehaviour,
@@ -126,7 +117,6 @@ private func newProvider<T>(_ plugins: [PluginType], xAccessToken: String? = nil
 }
 
 // MARK: - Provider support
-
 func stubbedResponse(_ filename: String) -> Data! {
     @objc class TestClass: NSObject { }
 
