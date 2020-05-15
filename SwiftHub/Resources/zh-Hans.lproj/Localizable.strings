@@ -4,6 +4,6 @@
 "Common.NoResults" = "没有结果";
 /* Toast */
 "Toast.ConnectionBack.Message" = "连接已恢复";
-"Toast.ConnectionLost.Message" = "没联系";
+"Toast.ConnectionLost.Message" = "没有连接";
 /* SPH */
-"SPH.Home" = " 主页";
+"SPH.Home" = " 首页";

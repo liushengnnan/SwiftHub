@@ -137,13 +137,6 @@ class ViewController: UIViewController, Navigatable, NVActivityIndicatorViewable
     public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         updateUI()
-
-        logResourcesCount()
-    }
-
-    deinit {
-        logDebug("\(type(of: self)): Deinited")
-        logResourcesCount()
     }
 
     override public func didReceiveMemoryWarning() {

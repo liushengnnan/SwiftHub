@@ -37,10 +37,8 @@ target 'SwiftHub' do
     pod 'DZNEmptyDataSet', '~> 1.0'  # https://github.com/dzenbot/DZNEmptyDataSet
     pod 'Hero', :git => 'https://github.com/HeroTransitions/Hero.git', :branch => 'develop'  # https://github.com/lkzhao/Hero
     pod 'Localize-Swift', '~> 3.0'  # https://github.com/marmelroy/Localize-Swift
-    pod 'RAMAnimatedTabBarController', '5.0.1'  # https://github.com/Ramotion/animated-tab-bar
     pod 'KafkaRefresh', '~> 1.0'  # https://github.com/OpenFeyn/KafkaRefresh
     pod 'Highlightr', '~> 2.0'  # https://github.com/raspu/Highlightr
-    pod 'DropDown', '~> 2.0'  # https://github.com/AssistoLab/DropDown
     pod 'Toast-Swift', '~> 5.0'  # https://github.com/scalessec/Toast-Swift
     
     # Auto Layout
@@ -60,7 +58,6 @@ target 'SwiftHub' do
         pod 'Nimble', '~> 8.0'  # https://github.com/Quick/Nimble
         pod 'RxAtomic', :modular_headers => true
         pod 'RxBlocking'  # https://github.com/ReactiveX/RxSwift
-        pod 'Firebase'
     end
 end
 

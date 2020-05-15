@@ -31,9 +31,4 @@ class ViewModel: NSObject {
         self.provider = provider
         super.init()
     }
-
-    deinit {
-        logDebug("\(type(of: self)): Deinited")
-        logResourcesCount()
-    }
 }

@@ -10,7 +10,6 @@ import UIKit
 import RxSwift
 import RxCocoa
 import RxTheme
-import RAMAnimatedTabBarController
 import KafkaRefresh
 
 let globalStatusBarStyle = BehaviorRelay<UIStatusBarStyle>(value: .default)
@@ -246,48 +245,6 @@ extension Reactive where Base: UITableView {
     }
 }
 
-extension Reactive where Base: RAMAnimatedTabBarItem {
-
-    var iconColor: Binder<UIColor> {
-        return Binder(self.base) { view, attr in
-            view.iconColor = attr
-            view.deselectAnimation()
-        }
-    }
-
-    var textColor: Binder<UIColor> {
-        return Binder(self.base) { view, attr in
-            view.textColor = attr
-            view.deselectAnimation()
-        }
-    }
-}
-
-extension Reactive where Base: RAMItemAnimation {
-
-    var iconSelectedColor: Binder<UIColor> {
-        return Binder(self.base) { view, attr in
-            view.iconSelectedColor = attr
-        }
-    }
-
-    var textSelectedColor: Binder<UIColor> {
-        return Binder(self.base) { view, attr in
-            view.textSelectedColor = attr
-        }
-    }
-}
-
-extension Reactive where Base: UINavigationBar {
-
-    @available(iOS 11.0, *)
-    var largeTitleTextAttributes: Binder<[NSAttributedString.Key: Any]?> {
-        return Binder(self.base) { view, attr in
-            view.largeTitleTextAttributes = attr
-        }
-    }
-}
-
 extension Reactive where Base: UIApplication {
 
     var statusBarStyle: Binder<UIStatusBarStyle> {
@@ -302,21 +259,6 @@ extension Reactive where Base: KafkaRefreshDefaults {
     var themeColor: Binder<UIColor?> {
         return Binder(self.base) { view, attr in
             view.themeColor = attr
-        }
-    }
-}
-
-public extension Reactive where Base: UISwitch {
-
-    var onTintColor: Binder<UIColor?> {
-        return Binder(self.base) { view, attr in
-            view.onTintColor = attr
-        }
-    }
-
-    var thumbTintColor: Binder<UIColor?> {
-        return Binder(self.base) { view, attr in
-            view.thumbTintColor = attr
         }
     }
 }

@@ -12,12 +12,12 @@ import Moya
 final class CustomPlugin: PluginType {
 
     func willSend(_ request: RequestType, target: TargetType) {
-        print("哈哈哈哈 willSend")
+        print("CustomPlugin willSend")
         print(request)
     }
 
     func didReceive(_ result: Result<Moya.Response, MoyaError>, target: TargetType) {
-        print("哈哈哈哈 didReceive")
+        print("CustomPlugin didReceive")
         print(result)
     }
 }

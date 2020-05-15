@@ -20,10 +20,7 @@ import RxGesture
 import SwifterSwift
 import Hero
 import KafkaRefresh
-import DropDown
 import Toast_Swift
-
-typealias DropDownView = DropDown
 
 /// The manager class for configuring all libraries used in app.
 class LibsManager: NSObject {
@@ -51,7 +48,6 @@ class LibsManager: NSObject {
         libsManager.setupTheme()
         libsManager.setupKafkaRefresh()
         libsManager.setupActivityView()
-        libsManager.setupDropDown()
         libsManager.setupToast()
     }
 
@@ -59,16 +55,6 @@ class LibsManager: NSObject {
         themeService.rx
             .bind({ $0.statusBarStyle }, to: UIApplication.shared.rx.statusBarStyle)
             .disposed(by: rx.disposeBag)
-    }
-
-    func setupDropDown() {
-        themeService.attrsStream.subscribe(onNext: { (theme) in
-            DropDown.appearance().backgroundColor = theme.primary
-            DropDown.appearance().selectionBackgroundColor = theme.primaryDark
-            DropDown.appearance().textColor = theme.text
-            DropDown.appearance().selectedTextColor = theme.text
-            DropDown.appearance().separatorColor = theme.separator
-        }).disposed(by: rx.disposeBag)
     }
 
     func setupToast() {
@@ -95,7 +81,6 @@ class LibsManager: NSObject {
         NVActivityIndicatorView.DEFAULT_TYPE = .ballRotateChase
         NVActivityIndicatorView.DEFAULT_COLOR = .secondary()
     }
-
 
     func setupCocoaLumberjack() {
         DDLog.add(DDOSLogger.sharedInstance)
