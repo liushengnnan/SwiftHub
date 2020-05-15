@@ -59,7 +59,6 @@ class LibsManager: NSObject {
         let libsManager = LibsManager.shared
         libsManager.setupCocoaLumberjack()
         libsManager.setupAnalytics()
-        libsManager.setupAds()
         libsManager.setupTheme()
         libsManager.setupKafkaRefresh()
         libsManager.setupFLEX()
@@ -145,10 +144,6 @@ class LibsManager: NSObject {
         Fabric.with([Crashlytics.self])
         Fabric.sharedSDK().debug = false
         FirebaseConfiguration.shared.setLoggerLevel(.min)
-    }
-
-    func setupAds() {
-        GADMobileAds.sharedInstance().start(completionHandler: nil)
     }
 }
 

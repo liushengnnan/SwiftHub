@@ -10,13 +10,12 @@ import UIKit
 
 // All keys are demonstrative and used for the test.
 enum Keys {
-    case github, mixpanel, adMob
+    case github, mixpanel
 
     var apiKey: String {
         switch self {
         case .github: return "5a39979251c0452a9476bd45c82a14d8e98c3fb3"
         case .mixpanel: return "7e428bc407e3612f6d3a4c8f50fd4643"
-        case .adMob: return "ca-app-pub-3940256099942544/2934735716"
         }
     }
 
@@ -24,7 +23,6 @@ enum Keys {
         switch self {
         case .github: return "00cbdbffb01ec72e280a"
         case .mixpanel: return ""
-        case .adMob: return ""  // See GADApplicationIdentifier in Info.plist
         }
     }
 }
