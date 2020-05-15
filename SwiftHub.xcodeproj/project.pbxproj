@@ -60,7 +60,6 @@
 		C762C67F1E1D5A7300C09EBD /* Observable+Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762C6721E1D5A7300C09EBD /* Observable+Logging.swift */; };
 		C762C6801E1D5A7300C09EBD /* Observable+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762C6731E1D5A7300C09EBD /* Observable+Operators.swift */; };
 		C762C6821E1D5A7300C09EBD /* UIColor+SwiftHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762C6771E1D5A7300C09EBD /* UIColor+SwiftHub.swift */; };
-		C762C6831E1D5A7300C09EBD /* UIFont+SwiftHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762C6791E1D5A7300C09EBD /* UIFont+SwiftHub.swift */; };
 		C762C6881E1D5C3A00C09EBD /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C762C6871E1D5C3A00C09EBD /* Icons.xcassets */; };
 		C762C6921E1D5D6E00C09EBD /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762C68C1E1D5D6E00C09EBD /* Networking.swift */; };
 		C762C6941E1D5D6E00C09EBD /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762C68E1E1D5D6E00C09EBD /* Reachability.swift */; };
@@ -168,7 +167,6 @@
 		C762C6721E1D5A7300C09EBD /* Observable+Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Logging.swift"; sourceTree = "<group>"; };
 		C762C6731E1D5A7300C09EBD /* Observable+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Operators.swift"; sourceTree = "<group>"; };
 		C762C6771E1D5A7300C09EBD /* UIColor+SwiftHub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+SwiftHub.swift"; sourceTree = "<group>"; };
-		C762C6791E1D5A7300C09EBD /* UIFont+SwiftHub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+SwiftHub.swift"; sourceTree = "<group>"; };
 		C762C6871E1D5C3A00C09EBD /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		C762C68C1E1D5D6E00C09EBD /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		C762C68E1E1D5D6E00C09EBD /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
@@ -516,7 +514,6 @@
 			children = (
 				C762C6711E1D5A7300C09EBD /* RxSwift */,
 				C762C6761E1D5A7300C09EBD /* UIColor */,
-				C762C6781E1D5A7300C09EBD /* UIFont */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -538,14 +535,6 @@
 				C762C6771E1D5A7300C09EBD /* UIColor+SwiftHub.swift */,
 			);
 			path = UIColor;
-			sourceTree = "<group>";
-		};
-		C762C6781E1D5A7300C09EBD /* UIFont */ = {
-			isa = PBXGroup;
-			children = (
-				C762C6791E1D5A7300C09EBD /* UIFont+SwiftHub.swift */,
-			);
-			path = UIFont;
 			sourceTree = "<group>";
 		};
 		C762C6891E1D5D6E00C09EBD /* Networking */ = {
@@ -997,7 +986,6 @@
 				A09DE8D020E7C05C00F6F2BF /* Kingfisher+Rx.swift in Sources */,
 				2C10712D246C2C34003FF1B3 /* SPHHomeCellModel.swift in Sources */,
 				C762C66A1E1D559000C09EBD /* TableViewController.swift in Sources */,
-				C762C6831E1D5A7300C09EBD /* UIFont+SwiftHub.swift in Sources */,
 				C762C6231E1D414B00C09EBD /* R.generated.swift in Sources */,
 				A09DE8C920E7B8F400F6F2BF /* ViewModelType.swift in Sources */,
 				0722DB1C22BF779F00C32A01 /* DefaultTableViewCellViewModel.swift in Sources */,
