@@ -27,7 +27,6 @@ target 'SwiftHub' do
 
     # Tools
     pod 'R.swift', '~> 5.0'  # https://github.com/mac-cain13/R.swift
-    pod 'SwiftLint', '0.39.2'  # https://github.com/realm/SwiftLint
 
     # Keychain
     pod 'KeychainAccess', '~> 4.0'  # https://github.com/kishikawakatsumi/KeychainAccess
@@ -38,7 +37,6 @@ target 'SwiftHub' do
     pod 'Hero', :git => 'https://github.com/HeroTransitions/Hero.git', :branch => 'develop'  # https://github.com/lkzhao/Hero
     pod 'Localize-Swift', '~> 3.0'  # https://github.com/marmelroy/Localize-Swift
     pod 'KafkaRefresh', '~> 1.0'  # https://github.com/OpenFeyn/KafkaRefresh
-    pod 'Highlightr', '~> 2.0'  # https://github.com/raspu/Highlightr
     pod 'Toast-Swift', '~> 5.0'  # https://github.com/scalessec/Toast-Swift
     
     # Auto Layout
@@ -46,8 +44,7 @@ target 'SwiftHub' do
 
     # Code Quality
     pod 'SwifterSwift', '~> 5.0'  # https://github.com/SwifterSwift/SwifterSwift
-    pod 'BonMot', '~> 5.0'  # https://github.com/Rightpoint/BonMot
-
+    
     target 'SwiftHubTests' do
         inherit! :search_paths
         # Pods for testing

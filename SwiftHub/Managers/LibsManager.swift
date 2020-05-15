@@ -59,8 +59,8 @@ class LibsManager: NSObject {
         ToastManager.shared.isTapToDismissEnabled = true
         ToastManager.shared.position = .top
         var style = ToastStyle()
-        style.backgroundColor = UIColor.Material.red
-        style.messageColor = UIColor.Material.white
+        style.backgroundColor = UIColor.red
+        style.messageColor = UIColor.white
         style.imageSize = CGSize(width: 20, height: 20)
         ToastManager.shared.style = style
     }
