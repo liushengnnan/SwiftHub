@@ -1,5 +1,5 @@
 //
-//  OfflineCachePlugin.swift
+//  CustomPlugin.swift
 //  SwiftHub
 //
 //  Created by shengnan liu on 15/5/20.
