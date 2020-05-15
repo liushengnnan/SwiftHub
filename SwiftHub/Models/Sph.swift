@@ -41,6 +41,7 @@ struct YearRecord {
                 if !tmpRecords.isEmpty {
                     let tmp = YearRecord(records: tmpRecords, year: tmpYear)
                     yearRecords.append(tmp)
+                    tmpRecords = [record]
                 }
             } else {
                 tmpRecords.append(record)
