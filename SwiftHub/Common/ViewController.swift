@@ -13,7 +13,6 @@ import DZNEmptyDataSet
 import NVActivityIndicatorView
 import Hero
 import Localize_Swift
-import GoogleMobileAds
 
 class ViewController: UIViewController, Navigatable, NVActivityIndicatorViewable {
 
@@ -70,14 +69,6 @@ class ViewController: UIViewController, Navigatable, NVActivityIndicatorViewable
                                  style: .plain,
                                  target: self,
                                  action: nil)
-        return view
-    }()
-
-    lazy var bannerView: GADBannerView = {
-        let view = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
-        view.rootViewController = self
-        view.adUnitID = Keys.adMob.apiKey
-        view.hero.id = "BannerView"
         return view
     }()
 
@@ -181,16 +172,6 @@ class ViewController: UIViewController, Navigatable, NVActivityIndicatorViewable
     func makeUI() {
         hero.isEnabled = true
         navigationItem.backBarButtonItem = backBarButton
-
-        bannerView.load(GADRequest())
-        LibsManager.shared.bannersEnabled.asDriver().drive(onNext: { [weak self] (enabled) in
-            guard let self = self else { return }
-            self.bannerView.removeFromSuperview()
-            self.stackView.removeArrangedSubview(self.bannerView)
-            if enabled {
-                self.stackView.addArrangedSubview(self.bannerView)
-            }
-        }).disposed(by: rx.disposeBag)
 
         languageChanged.subscribe(onNext: { [weak self] () in
             self?.emptyDataSetTitle = R.string.localizable.commonNoResults.key.localized()

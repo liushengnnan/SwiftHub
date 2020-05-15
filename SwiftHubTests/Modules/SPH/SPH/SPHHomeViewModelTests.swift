@@ -3,7 +3,7 @@
 //  SwiftHubTests
 //
 //  Created by shengnan liu on 14/5/20.
-//  Copyright © 2020 Khoren Markosyan. All rights reserved.
+
 //
 
 import Quick

@@ -3,7 +3,7 @@
 //  SwiftHub
 //
 //  Created by shengnan liu on 13/5/20.
-//  Copyright © 2020 Khoren Markosyan. All rights reserved.
+
 //
 
 import UIKit
