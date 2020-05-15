@@ -48,9 +48,6 @@ target 'SwiftHub' do
     pod 'SwifterSwift', '~> 5.0'  # https://github.com/SwifterSwift/SwifterSwift
     pod 'BonMot', '~> 5.0'  # https://github.com/Rightpoint/BonMot
 
-    # Logging
-    pod 'CocoaLumberjack/Swift', '~> 3.0'  # https://github.com/CocoaLumberjack/CocoaLumberjack
-
     target 'SwiftHubTests' do
         inherit! :search_paths
         # Pods for testing

@@ -114,7 +114,7 @@ class ViewController: UIViewController, Navigatable, NVActivityIndicatorViewable
         NotificationCenter.default
             .rx.notification(UIAccessibility.reduceMotionStatusDidChangeNotification)
             .subscribe(onNext: { (_) in
-                logDebug("Motion Status changed")
+                // ***
             }).disposed(by: rx.disposeBag)
 
         // Observe application did change language notification
@@ -137,12 +137,6 @@ class ViewController: UIViewController, Navigatable, NVActivityIndicatorViewable
     public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         updateUI()
-    }
-
-    override public func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-        logDebug("\(type(of: self)): Received Memory Warning")
     }
 
     func makeUI() {

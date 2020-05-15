@@ -97,7 +97,7 @@ extension NetworkingType {
                 request.cachePolicy = .returnCacheDataElseLoad
                 closure(.success(request))
             } catch {
-                logError(error.localizedDescription)
+                // ***
             }
         }
     }

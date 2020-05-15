@@ -10,7 +10,6 @@ import Foundation
 import RxSwift
 import RxCocoa
 import SnapKit
-import CocoaLumberjack
 import Kingfisher
 import NVActivityIndicatorView
 import NSObject_Rx
@@ -44,7 +43,6 @@ class LibsManager: NSObject {
 
     func setupLibs(with window: UIWindow? = nil) {
         let libsManager = LibsManager.shared
-        libsManager.setupCocoaLumberjack()
         libsManager.setupTheme()
         libsManager.setupKafkaRefresh()
         libsManager.setupActivityView()
@@ -80,14 +78,6 @@ class LibsManager: NSObject {
     func setupActivityView() {
         NVActivityIndicatorView.DEFAULT_TYPE = .ballRotateChase
         NVActivityIndicatorView.DEFAULT_COLOR = .secondary()
-    }
-
-    func setupCocoaLumberjack() {
-        DDLog.add(DDOSLogger.sharedInstance)
-        let fileLogger: DDFileLogger = DDFileLogger() // File Logger
-        fileLogger.rollingFrequency = TimeInterval(60*60*24)  // 24 hours
-        fileLogger.logFileManager.maximumNumberOfLogFiles = 7
-        DDLog.add(fileLogger)
     }
 }
 
