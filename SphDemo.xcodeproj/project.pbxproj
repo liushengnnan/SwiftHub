@@ -78,7 +78,6 @@
 
 /* Begin PBXFileReference section */
 		0336098A73F762317C930A65 /* Pods_SphDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SphDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0703ED1022186E1D0017136C /* .jazzy.yaml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .jazzy.yaml; sourceTree = SOURCE_ROOT; };
 		0722DB1B22BF779F00C32A01 /* DefaultTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		0751F7A9246B044800E42751 /* TableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModel.swift; sourceTree = "<group>"; };
 		0757B53B2166A6A000C04163 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -221,8 +220,6 @@
 			isa = PBXGroup;
 			children = (
 				07FC33821FFFE53800D53888 /* .gitignore */,
-				0703ED1022186E1D0017136C /* .jazzy.yaml */,
-				C762C66E1E1D58B200C09EBD /* Configs.swift */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -300,7 +297,6 @@
 				07FC33711FFFCCF700D53888 /* Models */,
 				07FC33741FFFD46D00D53888 /* Modules */,
 				C762C6891E1D5D6E00C09EBD /* Networking */,
-				A09DE8D120E7C2C400F6F2BF /* Third Party */,
 				C762C6211E1D414B00C09EBD /* Resources */,
 			);
 			path = SphDemo;
@@ -343,22 +339,6 @@
 				0751F7A9246B044800E42751 /* TableViewCellViewModel.swift */,
 			);
 			path = "Table View Cells";
-			sourceTree = "<group>";
-		};
-		A09DE8D120E7C2C400F6F2BF /* Third Party */ = {
-			isa = PBXGroup;
-			children = (
-				A09DE8D420E7C2C400F6F2BF /* RxActivityIndicator */,
-			);
-			path = "Third Party";
-			sourceTree = "<group>";
-		};
-		A09DE8D420E7C2C400F6F2BF /* RxActivityIndicator */ = {
-			isa = PBXGroup;
-			children = (
-				A09DE8D520E7C2C400F6F2BF /* ActivityIndicator.swift */,
-			);
-			path = RxActivityIndicator;
 			sourceTree = "<group>";
 		};
 		A0AEB3A4220D8CAD00A4B2AA /* Modules */ = {
@@ -409,6 +389,8 @@
 				C762C65D1E1D559000C09EBD /* View.swift */,
 				C762C65E1E1D559000C09EBD /* ViewController.swift */,
 				A09DE8C820E7B8F400F6F2BF /* ViewModelType.swift */,
+				A09DE8D520E7C2C400F6F2BF /* ActivityIndicator.swift */,
+				C762C66E1E1D58B200C09EBD /* Configs.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";

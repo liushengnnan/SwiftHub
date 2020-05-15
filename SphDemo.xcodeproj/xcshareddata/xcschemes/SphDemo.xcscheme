@@ -37,20 +37,6 @@
             BlueprintName = "SphDemo"
             ReferencedContainer = "container:SphDemo.xcodeproj">
          </BuildableReference>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A09499651E1D1CB700EFDE29"
-            BuildableName = "SphDemoTests.xctest"
-            BlueprintName = "SphDemoTests"
-            ReferencedContainer = "container:SphDemo.xcodeproj">
-         </BuildableReference>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A09499701E1D1CB700EFDE29"
-            BuildableName = "SphDemoUITests.xctest"
-            BlueprintName = "SphDemoUITests"
-            ReferencedContainer = "container:SphDemo.xcodeproj">
-         </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
       </Testables>
