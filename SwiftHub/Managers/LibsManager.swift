@@ -13,9 +13,6 @@ import SnapKit
 import IQKeyboardManagerSwift
 import CocoaLumberjack
 import Kingfisher
-#if DEBUG
-import FLEX
-#endif
 import Fabric
 import Crashlytics
 import NVActivityIndicatorView
@@ -61,7 +58,6 @@ class LibsManager: NSObject {
         libsManager.setupAnalytics()
         libsManager.setupTheme()
         libsManager.setupKafkaRefresh()
-        libsManager.setupFLEX()
         libsManager.setupKeyboardManager()
         libsManager.setupActivityView()
         libsManager.setupDropDown()
@@ -113,29 +109,12 @@ class LibsManager: NSObject {
         IQKeyboardManager.shared.enable = true
     }
 
-    func setupKingfisher() {
-        // Set maximum disk cache size for default cache. Default value is 0, which means no limit.
-        ImageCache.default.diskStorage.config.sizeLimit = UInt(500 * 1024 * 1024) // 500 MB
-
-        // Set longest time duration of the cache being stored in disk. Default value is 1 week
-        ImageCache.default.diskStorage.config.expiration = .days(7) // 1 week
-
-        // Set timeout duration for default image downloader. Default value is 15 sec.
-        ImageDownloader.default.downloadTimeout = 15.0 // 15 sec
-    }
-
     func setupCocoaLumberjack() {
         DDLog.add(DDOSLogger.sharedInstance)
         let fileLogger: DDFileLogger = DDFileLogger() // File Logger
         fileLogger.rollingFrequency = TimeInterval(60*60*24)  // 24 hours
         fileLogger.logFileManager.maximumNumberOfLogFiles = 7
         DDLog.add(fileLogger)
-    }
-
-    func setupFLEX() {
-        #if DEBUG
-        FLEXManager.shared.isNetworkDebuggingEnabled = true
-        #endif
     }
 
     func setupAnalytics() {
@@ -148,14 +127,6 @@ class LibsManager: NSObject {
 }
 
 extension LibsManager {
-
-    func showFlex() {
-        #if DEBUG
-        FLEXManager.shared.showExplorer()
-        analytics.log(.flexOpened)
-        #endif
-    }
-
     func removeKingfisherCache() -> Observable<Void> {
         return ImageCache.default.rx.clearCache()
     }

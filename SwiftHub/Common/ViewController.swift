@@ -125,16 +125,6 @@ class ViewController: UIViewController, Navigatable, NVActivityIndicatorViewable
             .subscribe { [weak self] (_) in
                 self?.languageChanged.accept(())
             }.disposed(by: rx.disposeBag)
-
-        // One finger swipe gesture for opening Flex
-        let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(handleOneFingerSwipe(swipeRecognizer:)))
-        swipeGesture.numberOfTouchesRequired = 1
-        self.view.addGestureRecognizer(swipeGesture)
-
-        // Two finger swipe gesture for opening Flex and Hero debug
-        let twoSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(handleTwoFingerSwipe(swipeRecognizer:)))
-        twoSwipeGesture.numberOfTouchesRequired = 2
-        self.view.addGestureRecognizer(twoSwipeGesture)
     }
 
     public override func viewWillAppear(_ animated: Bool) {
@@ -237,19 +227,6 @@ extension ViewController {
             make.height.equalTo(height)
         }
         return view
-    }
-
-    @objc func handleOneFingerSwipe(swipeRecognizer: UISwipeGestureRecognizer) {
-        if swipeRecognizer.state == .recognized, canOpenFlex {
-            LibsManager.shared.showFlex()
-        }
-    }
-
-    @objc func handleTwoFingerSwipe(swipeRecognizer: UISwipeGestureRecognizer) {
-        if swipeRecognizer.state == .recognized {
-            LibsManager.shared.showFlex()
-            HeroDebugPlugin.isEnabled = !HeroDebugPlugin.isEnabled
-        }
     }
 }
 
