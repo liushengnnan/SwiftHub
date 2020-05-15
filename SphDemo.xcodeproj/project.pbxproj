@@ -282,7 +282,6 @@
 			children = (
 				07FC336C1FFFCB5400D53888 /* Application */,
 				C762C64F1E1D559000C09EBD /* Common */,
-				C762C6701E1D5A7300C09EBD /* Extensions */,
 				07FC33791FFFE4E300D53888 /* Managers */,
 				07FC33711FFFCCF700D53888 /* Models */,
 				07FC33741FFFD46D00D53888 /* Modules */,
@@ -369,6 +368,7 @@
 			children = (
 				A09DE8CA20E7BE9B00F6F2BF /* Table View Cells */,
 				C762C6501E1D559000C09EBD /* BarButtonItem.swift */,
+				C762C6701E1D5A7300C09EBD /* Extensions */,
 				C762C6551E1D559000C09EBD /* ImageView.swift */,
 				C762C6561E1D559000C09EBD /* Label.swift */,
 				C762C6571E1D559000C09EBD /* NavigationController.swift */,
