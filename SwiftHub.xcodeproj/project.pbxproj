@@ -61,7 +61,6 @@
 		C762C6801E1D5A7300C09EBD /* Observable+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762C6731E1D5A7300C09EBD /* Observable+Operators.swift */; };
 		C762C6821E1D5A7300C09EBD /* UIColor+SwiftHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762C6771E1D5A7300C09EBD /* UIColor+SwiftHub.swift */; };
 		C762C6831E1D5A7300C09EBD /* UIFont+SwiftHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762C6791E1D5A7300C09EBD /* UIFont+SwiftHub.swift */; };
-		C762C6841E1D5A7300C09EBD /* UIImage+SwiftHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762C67B1E1D5A7300C09EBD /* UIImage+SwiftHub.swift */; };
 		C762C6881E1D5C3A00C09EBD /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C762C6871E1D5C3A00C09EBD /* Icons.xcassets */; };
 		C762C6921E1D5D6E00C09EBD /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762C68C1E1D5D6E00C09EBD /* Networking.swift */; };
 		C762C6941E1D5D6E00C09EBD /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762C68E1E1D5D6E00C09EBD /* Reachability.swift */; };
@@ -170,7 +169,6 @@
 		C762C6731E1D5A7300C09EBD /* Observable+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Operators.swift"; sourceTree = "<group>"; };
 		C762C6771E1D5A7300C09EBD /* UIColor+SwiftHub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+SwiftHub.swift"; sourceTree = "<group>"; };
 		C762C6791E1D5A7300C09EBD /* UIFont+SwiftHub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+SwiftHub.swift"; sourceTree = "<group>"; };
-		C762C67B1E1D5A7300C09EBD /* UIImage+SwiftHub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+SwiftHub.swift"; sourceTree = "<group>"; };
 		C762C6871E1D5C3A00C09EBD /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		C762C68C1E1D5D6E00C09EBD /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		C762C68E1E1D5D6E00C09EBD /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
@@ -519,7 +517,6 @@
 				C762C6711E1D5A7300C09EBD /* RxSwift */,
 				C762C6761E1D5A7300C09EBD /* UIColor */,
 				C762C6781E1D5A7300C09EBD /* UIFont */,
-				C762C67A1E1D5A7300C09EBD /* UIImage */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -549,14 +546,6 @@
 				C762C6791E1D5A7300C09EBD /* UIFont+SwiftHub.swift */,
 			);
 			path = UIFont;
-			sourceTree = "<group>";
-		};
-		C762C67A1E1D5A7300C09EBD /* UIImage */ = {
-			isa = PBXGroup;
-			children = (
-				C762C67B1E1D5A7300C09EBD /* UIImage+SwiftHub.swift */,
-			);
-			path = UIImage;
 			sourceTree = "<group>";
 		};
 		C762C6891E1D5D6E00C09EBD /* Networking */ = {
@@ -977,7 +966,6 @@
 				2C10711D246C2326003FF1B3 /* SPHHomeViewController.swift in Sources */,
 				07FC337F1FFFE4E300D53888 /* LogManager.swift in Sources */,
 				07FC33871FFFE68800D53888 /* Api.swift in Sources */,
-				C762C6841E1D5A7300C09EBD /* UIImage+SwiftHub.swift in Sources */,
 				C762C66C1E1D559000C09EBD /* View.swift in Sources */,
 				0751F7AA246B044800E42751 /* TableViewCellViewModel.swift in Sources */,
 				2C10712F246C4A4D003FF1B3 /* Sph.swift in Sources */,
