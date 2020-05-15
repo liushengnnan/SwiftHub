@@ -1,0 +1,236 @@
+PODS:
+  - Alamofire (5.1.0)
+  - Differentiator (4.0.1)
+  - DZNEmptyDataSet (1.8.1)
+  - Hero (1.5.0)
+  - KafkaRefresh (1.4.8):
+    - KafkaRefresh/Category (= 1.4.8)
+    - KafkaRefresh/Configuration (= 1.4.8)
+    - KafkaRefresh/Core (= 1.4.8)
+    - KafkaRefresh/Default (= 1.4.8)
+    - KafkaRefresh/Style (= 1.4.8)
+    - KafkaRefresh/UIKit (= 1.4.8)
+  - KafkaRefresh/Category (1.4.8)
+  - KafkaRefresh/Configuration (1.4.8):
+    - KafkaRefresh/UIKit/FootKit
+    - KafkaRefresh/UIKit/HeadKit
+  - KafkaRefresh/Core (1.4.8):
+    - KafkaRefresh/Category
+  - KafkaRefresh/Default (1.4.8):
+    - KafkaRefresh/Style
+  - KafkaRefresh/Style (1.4.8)
+  - KafkaRefresh/UIKit (1.4.8):
+    - KafkaRefresh/UIKit/FootKit (= 1.4.8)
+    - KafkaRefresh/UIKit/HeadKit (= 1.4.8)
+    - KafkaRefresh/UIKit/LayerKit (= 1.4.8)
+  - KafkaRefresh/UIKit/FootKit (1.4.8):
+    - KafkaRefresh/Category
+    - KafkaRefresh/Core
+    - KafkaRefresh/Default
+    - KafkaRefresh/Style
+    - KafkaRefresh/UIKit/LayerKit
+  - KafkaRefresh/UIKit/HeadKit (1.4.8):
+    - KafkaRefresh/Category
+    - KafkaRefresh/Core
+    - KafkaRefresh/Default
+    - KafkaRefresh/Style
+    - KafkaRefresh/UIKit/LayerKit
+  - KafkaRefresh/UIKit/LayerKit (1.4.8):
+    - KafkaRefresh/Category
+    - KafkaRefresh/Default
+  - KeychainAccess (4.2.0)
+  - Kingfisher (5.14.0):
+    - Kingfisher/Core (= 5.14.0)
+  - Kingfisher/Core (5.14.0)
+  - Localize-Swift (3.1.0)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya-ObjectMapper/Core (2.9):
+    - Moya (~> 14.0.0-beta.6)
+    - ObjectMapper
+  - Moya-ObjectMapper/RxSwift (2.9):
+    - Moya-ObjectMapper/Core
+    - Moya/RxSwift
+    - RxSwift
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
+    - Moya/Core
+    - RxSwift (~> 5.0)
+  - Nimble (8.0.8)
+  - "NSObject+Rx (5.1.0)":
+    - RxSwift (~> 5.1)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - ObjectMapper (3.5.2)
+  - Quick (2.2.0)
+  - R.swift (5.2.2):
+    - R.swift.Library (~> 5.2.0)
+  - R.swift.Library (5.2.0)
+  - RxAtomic (4.4.2)
+  - RxBlocking (5.1.1):
+    - RxSwift (~> 5)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxGesture (3.0.2):
+    - RxCocoa (~> 5.1)
+    - RxSwift (~> 5.1)
+  - RxOptional (4.1.0):
+    - RxCocoa (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - RxSwiftExt (5.2.0):
+    - RxSwiftExt/Core (= 5.2.0)
+    - RxSwiftExt/RxCocoa (= 5.2.0)
+  - RxSwiftExt/Core (5.2.0):
+    - RxSwift (~> 5.0)
+  - RxSwiftExt/RxCocoa (5.2.0):
+    - RxCocoa (~> 5.0)
+    - RxSwiftExt/Core
+  - RxTheme (4.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxViewController (1.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - SnapKit (5.0.1)
+  - SwifterSwift (5.2.0):
+    - SwifterSwift/AppKit (= 5.2.0)
+    - SwifterSwift/CoreAnimation (= 5.2.0)
+    - SwifterSwift/CoreGraphics (= 5.2.0)
+    - SwifterSwift/CoreLocation (= 5.2.0)
+    - SwifterSwift/Dispatch (= 5.2.0)
+    - SwifterSwift/Foundation (= 5.2.0)
+    - SwifterSwift/MapKit (= 5.2.0)
+    - SwifterSwift/SceneKit (= 5.2.0)
+    - SwifterSwift/SpriteKit (= 5.2.0)
+    - SwifterSwift/StoreKit (= 5.2.0)
+    - SwifterSwift/SwiftStdlib (= 5.2.0)
+    - SwifterSwift/UIKit (= 5.2.0)
+  - SwifterSwift/AppKit (5.2.0)
+  - SwifterSwift/CoreAnimation (5.2.0)
+  - SwifterSwift/CoreGraphics (5.2.0)
+  - SwifterSwift/CoreLocation (5.2.0)
+  - SwifterSwift/Dispatch (5.2.0)
+  - SwifterSwift/Foundation (5.2.0)
+  - SwifterSwift/MapKit (5.2.0)
+  - SwifterSwift/SceneKit (5.2.0)
+  - SwifterSwift/SpriteKit (5.2.0)
+  - SwifterSwift/StoreKit (5.2.0)
+  - SwifterSwift/SwiftStdlib (5.2.0)
+  - SwifterSwift/UIKit (5.2.0)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - DZNEmptyDataSet (~> 1.0)
+  - Hero (from `https://github.com/HeroTransitions/Hero.git`, branch `develop`)
+  - KafkaRefresh (~> 1.0)
+  - KeychainAccess (~> 4.0)
+  - Kingfisher (~> 5.0)
+  - Localize-Swift (~> 3.0)
+  - Moya-ObjectMapper/RxSwift (~> 2.0)
+  - Moya/RxSwift
+  - Nimble (~> 8.0)
+  - "NSObject+Rx (~> 5.0)"
+  - NVActivityIndicatorView (~> 4.0)
+  - Quick (~> 2.0)
+  - R.swift (~> 5.0)
+  - RxAtomic
+  - RxBlocking
+  - RxDataSources (~> 4.0)
+  - RxGesture (~> 3.0)
+  - RxOptional (~> 4.0)
+  - RxSwiftExt (~> 5.0)
+  - RxTheme (~> 4.0)
+  - RxViewController (~> 1.0)
+  - SnapKit (~> 5.0)
+  - SwifterSwift (~> 5.0)
+  - Toast-Swift (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Differentiator
+    - DZNEmptyDataSet
+    - KafkaRefresh
+    - KeychainAccess
+    - Kingfisher
+    - Localize-Swift
+    - Moya
+    - Moya-ObjectMapper
+    - Nimble
+    - "NSObject+Rx"
+    - NVActivityIndicatorView
+    - ObjectMapper
+    - Quick
+    - R.swift
+    - R.swift.Library
+    - RxAtomic
+    - RxBlocking
+    - RxCocoa
+    - RxDataSources
+    - RxGesture
+    - RxOptional
+    - RxRelay
+    - RxSwift
+    - RxSwiftExt
+    - RxTheme
+    - RxViewController
+    - SnapKit
+    - SwifterSwift
+    - Toast-Swift
+
+EXTERNAL SOURCES:
+  Hero:
+    :branch: develop
+    :git: https://github.com/HeroTransitions/Hero.git
+
+CHECKOUT OPTIONS:
+  Hero:
+    :commit: c70b471eeb91c5ac72d9d8e99affb9fbe0748b81
+    :git: https://github.com/HeroTransitions/Hero.git
+
+SPEC CHECKSUMS:
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  Hero: b7385b75e7259da62f4f85462f59a5082d66b058
+  KafkaRefresh: aaae4ff23197f2ef38b6b22ca320740beac4bbb4
+  KeychainAccess: 3f760109aa99b05d0f231e28b22642da7153e38a
+  Kingfisher: 7b64389a43139c903ec434788344c288217c792d
+  Localize-Swift: 4bed4f0ccac8be2ec3517ee359da80ba2adb0fae
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  Moya-ObjectMapper: 967a99d9ea3aa9c93ddbe112aeca3667f53bfe93
+  Nimble: 2da33c44adfde49552d4a6b3ef16039a45bf8dca
+  "NSObject+Rx": fa6bbcc1ab1faa06b01466bc09b1e0692bbc5946
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  ObjectMapper: b53ae947d370bf89423e86be7d4e2d2b2a8d3f40
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
+  R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
+  R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
+  RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
+  RxBlocking: 5f700a78cad61ce253ebd37c9a39b5ccc76477b4
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxGesture: d6bd7447ca3a596c7a9702a6a2b6a2bb5d8bae54
+  RxOptional: b1fcd60856807a564c0215c2184b8d33e7826dc2
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  RxSwiftExt: 4ca80336f43c28f11a2825cdd2fc61dd6c044697
+  RxTheme: 0b642f47c7d197a803c6b9c083964188c34f7ddb
+  RxViewController: 7330a46e5c31cd680db169da4c9fc8676e975a81
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: e2f2f76de2370199fa6f2f2a3eed1bda7fc109ca
+
+COCOAPODS: 1.9.1

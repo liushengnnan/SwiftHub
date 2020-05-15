@@ -87,7 +87,6 @@
 		07FC336D1FFFCB8B00D53888 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		07FC336F1FFFCBF600D53888 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		07FC337B1FFFE4E300D53888 /* LibsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibsManager.swift; sourceTree = "<group>"; };
-		07FC33821FFFE53800D53888 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		07FC33861FFFE68800D53888 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		09AB701278239F8FA64A2273 /* Pods-SphDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SphDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SphDemoTests/Pods-SphDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		2C10711C246C2326003FF1B3 /* SPHHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SPHHomeViewController.swift; path = SphHome/SPHHomeViewController.swift; sourceTree = "<group>"; };
@@ -216,14 +215,6 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		07FC33781FFFE2BD00D53888 /* Configs */ = {
-			isa = PBXGroup;
-			children = (
-				07FC33821FFFE53800D53888 /* .gitignore */,
-			);
-			path = Configs;
-			sourceTree = "<group>";
-		};
 		07FC33791FFFE4E300D53888 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,7 +282,6 @@
 			children = (
 				07FC336C1FFFCB5400D53888 /* Application */,
 				C762C64F1E1D559000C09EBD /* Common */,
-				07FC33781FFFE2BD00D53888 /* Configs */,
 				C762C6701E1D5A7300C09EBD /* Extensions */,
 				07FC33791FFFE4E300D53888 /* Managers */,
 				07FC33711FFFCCF700D53888 /* Models */,
