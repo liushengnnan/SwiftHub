@@ -79,17 +79,6 @@
 /* Begin PBXFileReference section */
 		0336098A73F762317C930A65 /* Pods_SphDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SphDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0703ED1022186E1D0017136C /* .jazzy.yaml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .jazzy.yaml; sourceTree = SOURCE_ROOT; };
-		070E069F2214940800141262 /* keyword.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = keyword.strings; sourceTree = "<group>"; };
-		070E06A22214940800141262 /* title.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = title.strings; sourceTree = "<group>"; };
-		070E06A92214940800141262 /* framefile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = framefile.json; sourceTree = "<group>"; };
-		070E06AC2214940800141262 /* keyword.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = keyword.strings; sourceTree = "<group>"; };
-		070E06AF2214940800141262 /* title.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = title.strings; sourceTree = "<group>"; };
-		070E06B92214940800141262 /* keyword.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = keyword.strings; sourceTree = "<group>"; };
-		070E06BC2214940800141262 /* title.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = title.strings; sourceTree = "<group>"; };
-		070E06C42214940800141262 /* Appfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
-		070E06C62214940800141262 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
-		070E06C72214940800141262 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		070E06C92214940800141262 /* Snapfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Snapfile; sourceTree = "<group>"; };
 		0722DB1B22BF779F00C32A01 /* DefaultTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		0751F7A9246B044800E42751 /* TableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModel.swift; sourceTree = "<group>"; };
 		0757B53B2166A6A000C04163 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -100,7 +89,6 @@
 		07FC336F1FFFCBF600D53888 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		07FC337B1FFFE4E300D53888 /* LibsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibsManager.swift; sourceTree = "<group>"; };
 		07FC33821FFFE53800D53888 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
-		07FC33841FFFE54800D53888 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		07FC33861FFFE68800D53888 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		09AB701278239F8FA64A2273 /* Pods-SphDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SphDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SphDemoTests/Pods-SphDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		2C10711C246C2326003FF1B3 /* SPHHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SPHHomeViewController.swift; path = SphHome/SPHHomeViewController.swift; sourceTree = "<group>"; };
@@ -192,56 +180,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		070E069A2214940800141262 /* fastlane */ = {
-			isa = PBXGroup;
-			children = (
-				070E069C2214940800141262 /* screenshots */,
-				070E06C42214940800141262 /* Appfile */,
-				070E06C62214940800141262 /* Fastfile */,
-				070E06C72214940800141262 /* README.md */,
-				070E06C92214940800141262 /* Snapfile */,
-			);
-			path = fastlane;
-			sourceTree = SOURCE_ROOT;
-		};
-		070E069C2214940800141262 /* screenshots */ = {
-			isa = PBXGroup;
-			children = (
-				070E06A92214940800141262 /* framefile.json */,
-				070E06B72214940800141262 /* en-US */,
-				070E06AA2214940800141262 /* ru */,
-				070E069D2214940800141262 /* zh-Hans */,
-			);
-			path = screenshots;
-			sourceTree = "<group>";
-		};
-		070E069D2214940800141262 /* zh-Hans */ = {
-			isa = PBXGroup;
-			children = (
-				070E069F2214940800141262 /* keyword.strings */,
-				070E06A22214940800141262 /* title.strings */,
-			);
-			path = "zh-Hans";
-			sourceTree = "<group>";
-		};
-		070E06AA2214940800141262 /* ru */ = {
-			isa = PBXGroup;
-			children = (
-				070E06AC2214940800141262 /* keyword.strings */,
-				070E06AF2214940800141262 /* title.strings */,
-			);
-			path = ru;
-			sourceTree = "<group>";
-		};
-		070E06B72214940800141262 /* en-US */ = {
-			isa = PBXGroup;
-			children = (
-				070E06B92214940800141262 /* keyword.strings */,
-				070E06BC2214940800141262 /* title.strings */,
-			);
-			path = "en-US";
-			sourceTree = "<group>";
-		};
 		07F9E465223404FF0012BA6D /* Rest */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,11 +220,9 @@
 		07FC33781FFFE2BD00D53888 /* Configs */ = {
 			isa = PBXGroup;
 			children = (
-				070E069A2214940800141262 /* fastlane */,
 				07FC33821FFFE53800D53888 /* .gitignore */,
 				0703ED1022186E1D0017136C /* .jazzy.yaml */,
 				C762C66E1E1D58B200C09EBD /* Configs.swift */,
-				07FC33841FFFE54800D53888 /* README.md */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
