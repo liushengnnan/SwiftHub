@@ -18,12 +18,12 @@ Install [Brew](https://github.com/Homebrew/brew) package manager for macOS
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-Install [`Node`](https://nodejs.org/en/) (required to install [Apollo](https://github.com/apollographql/apollo-ios))
+Install [`Node`](https://nodejs.org/en/) 
 ```sh
 brew install node
 ```
 
-The following commands will set up SwiftHub
+The following commands will set up
 ```sh
 cd SwiftHub
 bundle install
