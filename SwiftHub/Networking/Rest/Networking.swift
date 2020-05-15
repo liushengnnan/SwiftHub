@@ -24,29 +24,23 @@ class OnlineProvider<Target> where Target: Moya.TargetType {
         self.online = online
         self.provider = MoyaProvider(endpointClosure: endpointClosure, requestClosure: requestClosure, stubClosure: stubClosure, session: session, plugins: plugins, trackInflights: trackInflights)
     }
-
     func request(_ token: Target) -> Observable<Moya.Response> {
         let actualRequest = provider.rx.request(token)
-        return online
-            .ignore(value: false)  // Wait until we're online
-            .take(1)        // Take 1 to make sure we only invoke the API once.
-            .flatMap { _ in // Turn the online state into a network request
-                return actualRequest
-                    .filterSuccessfulStatusCodes()
-                    .do(onSuccess: { (response) in
-                    }, onError: { (error) in
-                        if let error = error as? MoyaError {
-                            switch error {
-                            case .statusCode(let response):
-                                if response.statusCode == 401 {
-                                    // Unauthorized
-                                    //                                    AuthManager.removeToken()
-                                }
-                            default: break
-                            }
+        return actualRequest
+            .filterSuccessfulStatusCodes()
+            .do(onSuccess: { (response) in
+                // ****
+            }, onError: { (error) in
+                if let error = error as? MoyaError {
+                    switch error {
+                    case .statusCode(let response):
+                        if response.statusCode == 401 {
+                            // ****
                         }
-                    })
-        }
+                    default: break
+                    }
+                }
+            }).asObservable()
     }
 }
 
@@ -76,24 +70,24 @@ extension NetworkingType {
     static func endpointsClosure<T>(_ xAccessToken: String? = nil) -> (T) -> Endpoint where T: TargetType {
         return { target in
             let endpoint = MoyaProvider.defaultEndpointMapping(for: target)
-
+            
             // Sign all non-XApp, non-XAuth token requests
             return endpoint
         }
     }
-
+    
     static func APIKeysBasedStubBehaviour<T>(_: T) -> Moya.StubBehavior {
         return .never
     }
-
+    
     static var plugins: [PluginType] {
-        var plugins: [PluginType] = []
+        var plugins: [PluginType] = [CustomPlugin()]
         if Configs.Network.loggingEnabled == true {
             plugins.append(NetworkLoggerPlugin())
         }
         return plugins
     }
-
+    
     // (Endpoint<Target>, NSURLRequest -> Void) -> Void
     static func endpointResolver() -> MoyaProvider<T>.RequestClosure {
         return { (endpoint, closure) in
@@ -119,7 +113,7 @@ private func newProvider<T>(_ plugins: [PluginType], xAccessToken: String? = nil
 // MARK: - Provider support
 func stubbedResponse(_ filename: String) -> Data! {
     @objc class TestClass: NSObject { }
-
+    
     let bundle = Bundle(for: TestClass.self)
     let path = bundle.path(forResource: filename, ofType: "json")
     return (try? Data(contentsOf: URL(fileURLWithPath: path!)))

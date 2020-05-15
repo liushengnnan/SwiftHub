@@ -25,16 +25,14 @@ class SPHHomeViewModelTests: QuickSpec {
         afterEach {
             viewModel = nil // Force viewModel to deallocate and stop syncing.
         }
-        
-        describe("SPHHomeViewModel output") {
-            it("SPHHomeViewModel") {
+        describe("SPHHomeViewModel") {
+            it("SPHHomeViewModel output") {
                 let id = "a807b7ab-6cad-4aa6-87d0-e283a7353a0f"
                 viewModel = SPHHomeViewModel(id: id, provider: provider)
                 self.testViewModel(viewModel: viewModel, disposeBag: disposeBag)
             }
         }
     }
-    
     func testViewModel(viewModel: SPHHomeViewModel, disposeBag: DisposeBag) {
         let headerRefresh = PublishSubject<Void>()
         let selection = PublishSubject<SPHHomeCellModel>()
@@ -45,6 +43,7 @@ class SPHHomeViewModelTests: QuickSpec {
         // test pagination
         expect(output.items.value.count) == 0
         expect(viewModel.page) == 1
+        // test pull Refresh
         headerRefresh.onNext(())
         expect(output.items.value.count) == 2
         expect(viewModel.page) == 1

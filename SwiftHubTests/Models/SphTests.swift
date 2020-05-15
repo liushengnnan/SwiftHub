@@ -77,7 +77,3 @@ class YearRecordTests: QuickSpec {
     }
 }
 
-class SphTests: QuickSpec {
-    
-    
-}
