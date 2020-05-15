@@ -14,14 +14,14 @@ enum Keys {
 
     var apiKey: String {
         switch self {
-        case .github: return "5a39979251c0452a9476bd45c82a14d8e98c3fb3"
-        case .mixpanel: return "7e428bc407e3612f6d3a4c8f50fd4643"
+        case .github: return ""
+        case .mixpanel: return ""
         }
     }
 
     var appId: String {
         switch self {
-        case .github: return "00cbdbffb01ec72e280a"
+        case .github: return ""
         case .mixpanel: return ""
         }
     }
@@ -36,12 +36,6 @@ struct Configs {
     struct Network {
         static let useStaging = false  // set true for tests and generating screenshots with fastlane
         static let loggingEnabled = false
-        static let githubBaseUrl = "https://api.github.com"
-        static let trendingGithubBaseUrl = "https://github-trending-api.now.sh"
-        static let codetabsBaseUrl = "https://api.codetabs.com/v1"
-        static let githistoryBaseUrl = "https://github.githistory.xyz"
-        static let starHistoryBaseUrl = "https://star-history.t9t.io"
-        static let profileSummaryBaseUrl = "https://profile-summary-for-github.com"
     }
 
     struct BaseDimensions {
