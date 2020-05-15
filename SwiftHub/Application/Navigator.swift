@@ -28,7 +28,6 @@ class Navigator {
         case sphHome(viewModel: SPHHomeViewModel)
         case safari(URL)
         case safariController(URL)
-        case webController(URL)
     }
 
     enum Transition {
@@ -51,14 +50,8 @@ class Navigator {
         case .safari(let url):
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
             return nil
-
         case .safariController(let url):
             let vc = SFSafariViewController(url: url)
-            return vc
-
-        case .webController(let url):
-            let vc = WebViewController(viewModel: nil, navigator: self)
-            vc.load(url: url)
             return vc
         }
     }

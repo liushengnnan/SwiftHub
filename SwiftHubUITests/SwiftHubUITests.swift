@@ -29,31 +29,4 @@ class SwiftHubUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-
-    func testScreenshotSettings() {
-        let element = XCUIApplication().children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element
-        element.children(matching: .other).element(boundBy: 3).tap()
-        sleep(1)
-        element.children(matching: .other).element(boundBy: 1).tap()
-        sleep(1)
-        element.children(matching: .other).element(boundBy: 3).tap()
-
-        sleep(5)
-        snapshot("03_settings_screen")
-    }
-
-    func testScreenshotRepositoryDetails() {
-        let app = XCUIApplication()
-
-        let tablesQuery = app.tables
-        tablesQuery.staticTexts["GitHub iOS client in RxSwift and MVVM-C clean architecture"].tap()
-
-        sleep(5)
-        snapshot("02_repository_details_screen")
-    }
-
-    func testScreenshotSearch() {
-        sleep(5)
-        snapshot("01_search_repository_screen")
-    }
 }
