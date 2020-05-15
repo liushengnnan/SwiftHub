@@ -53,11 +53,6 @@ class ViewController: UIViewController, Navigatable, NVActivityIndicatorViewable
 
     let motionShakeEvent = PublishSubject<Void>()
 
-    lazy var searchBar: SearchBar = {
-        let view = SearchBar()
-        return view
-    }()
-
     lazy var backBarButton: BarButtonItem = {
         let view = BarButtonItem()
         view.title = ""
