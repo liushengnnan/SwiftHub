@@ -20,12 +20,15 @@ class SPHHomeCell: DefaultTableViewCell {
         super.bind(to: viewModel)
         guard let viewModel = viewModel as? SPHHomeCellModel else { return }
         rightImageView.rx.tap().subscribe(onNext: { () in
-            var style = ToastManager.shared.style
-            style.backgroundColor =  UIColor.Material.green
-            style.maxHeightPercentage = 0.5
             let message = viewModel.record.quarters?.toJSONString()
-            UIApplication.shared.keyWindow?.makeToast(message)
-
+            self.showToast(message: message)
         }).disposed(by: rx.disposeBag)
+    }
+    
+    func showToast(message: String?) {
+        var style = ToastManager.shared.style
+        style.backgroundColor =  UIColor.Material.green
+        style.maxHeightPercentage = 0.5
+        UIApplication.shared.keyWindow?.makeToast(message)
     }
 }

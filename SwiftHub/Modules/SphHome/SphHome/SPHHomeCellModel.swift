@@ -15,8 +15,8 @@ class SPHHomeCellModel: DefaultTableViewCellViewModel {
     init(with record: YearRecord) {
         self.record = record
         super.init()
-        title.accept(record.year)
-        detail.accept(record.volumeOfMobileData)
+        title.accept(record.volumeOfMobileData)
+        detail.accept(record.year)
         image.accept(R.image.icon_cell_star()?.template)
         hidesDisclosure.accept(!record.decrease)
     }
