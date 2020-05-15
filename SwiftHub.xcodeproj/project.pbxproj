@@ -7,48 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		070FF84020F2250F0070F5E8 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 070FF83F20F2250F0070F5E8 /* User.json */; };
-		070FF84220F225200070F5E8 /* Organization.json in Resources */ = {isa = PBXBuildFile; fileRef = 070FF84120F225200070F5E8 /* Organization.json */; };
 		07178A61220F581C0020AE12 /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07178A60220F581C0020AE12 /* Toolbar.swift */; };
 		0722DB1C22BF779F00C32A01 /* DefaultTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0722DB1B22BF779F00C32A01 /* DefaultTableViewCellViewModel.swift */; };
-		07241D0521B1740000F800BD /* RepositoryCommits.json in Resources */ = {isa = PBXBuildFile; fileRef = 07241D0421B1740000F800BD /* RepositoryCommits.json */; };
-		07241D0721B1741800F800BD /* RepositoryCommit.json in Resources */ = {isa = PBXBuildFile; fileRef = 07241D0621B1741800F800BD /* RepositoryCommit.json */; };
-		07241D0921B1742700F800BD /* RepositoryBranches.json in Resources */ = {isa = PBXBuildFile; fileRef = 07241D0821B1742700F800BD /* RepositoryBranches.json */; };
-		07241D0B21B1743900F800BD /* RepositoryBranch.json in Resources */ = {isa = PBXBuildFile; fileRef = 07241D0A21B1743900F800BD /* RepositoryBranch.json */; };
-		07241D0D21B1744900F800BD /* RepositoryPullRequests.json in Resources */ = {isa = PBXBuildFile; fileRef = 07241D0C21B1744900F800BD /* RepositoryPullRequests.json */; };
-		07241D0F21B1745D00F800BD /* RepositoryPullRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = 07241D0E21B1745D00F800BD /* RepositoryPullRequest.json */; };
-		072B8EDA21B4143200B2C28C /* RepositoryContributors.json in Resources */ = {isa = PBXBuildFile; fileRef = 072B8ED921B4143200B2C28C /* RepositoryContributors.json */; };
-		072BD798225FD4F200E6C580 /* RepositoryReleases.json in Resources */ = {isa = PBXBuildFile; fileRef = 072BD797225FD4F200E6C580 /* RepositoryReleases.json */; };
-		072BD79A225FD50400E6C580 /* RepositoryRelease.json in Resources */ = {isa = PBXBuildFile; fileRef = 072BD799225FD50400E6C580 /* RepositoryRelease.json */; };
-		073204552141377D00C1E39F /* Events.json in Resources */ = {isa = PBXBuildFile; fileRef = 073204542141377D00C1E39F /* Events.json */; };
-		073204572141379500C1E39F /* EventsRepository.json in Resources */ = {isa = PBXBuildFile; fileRef = 073204562141379500C1E39F /* EventsRepository.json */; };
-		07320459214137A800C1E39F /* EventsUserReceived.json in Resources */ = {isa = PBXBuildFile; fileRef = 07320458214137A800C1E39F /* EventsUserReceived.json */; };
-		0732045B214137B800C1E39F /* EventsUserPerformed.json in Resources */ = {isa = PBXBuildFile; fileRef = 0732045A214137B800C1E39F /* EventsUserPerformed.json */; };
 		0732046A21419DB200C1E39F /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0732046921419DB200C1E39F /* ISO8601DateTransform.swift */; };
 		073A1F792233F2F000D6F487 /* Search.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 073A1F782233F2F000D6F487 /* Search.graphql */; };
-		074DBBEE2448A0480062B35F /* RepositoryNumberOfLines.json in Resources */ = {isa = PBXBuildFile; fileRef = 074DBBED2448A0480062B35F /* RepositoryNumberOfLines.json */; };
 		0751F7AA246B044800E42751 /* TableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0751F7A9246B044800E42751 /* TableViewCellViewModel.swift */; };
 		0757B53A2166A6A000C04163 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0757B53C2166A6A000C04163 /* Localizable.strings */; };
-		0758D7E02222C20200E99DDD /* UserRepositoriesWatching.json in Resources */ = {isa = PBXBuildFile; fileRef = 0758D7DF2222C20200E99DDD /* UserRepositoriesWatching.json */; };
-		075A55CF228845F8004DF9F7 /* RepositoryPullRequestComments.json in Resources */ = {isa = PBXBuildFile; fileRef = 075A55CE228845F8004DF9F7 /* RepositoryPullRequestComments.json */; };
-		075A55D1228850A5004DF9F7 /* RepositoryIssue.json in Resources */ = {isa = PBXBuildFile; fileRef = 075A55D0228850A5004DF9F7 /* RepositoryIssue.json */; };
 		075AB1AA20F2988F00B7E923 /* Pods-SwiftHub-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 075AB1A920F2988F00B7E923 /* Pods-SwiftHub-acknowledgements.plist */; };
 		075E75E521D2C6B200213683 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075E75E421D2C6B200213683 /* PickerView.swift */; };
 		079BF51721FF618500FFA334 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079BF51621FF618500FFA334 /* ErrorResponse.swift */; };
-		07A34DC521E29ACC00B05857 /* RepositoryTrendings.json in Resources */ = {isa = PBXBuildFile; fileRef = 07A34DC421E29ACC00B05857 /* RepositoryTrendings.json */; };
-		07A34DC721E29BE200B05857 /* UserTrendings.json in Resources */ = {isa = PBXBuildFile; fileRef = 07A34DC621E29BE200B05857 /* UserTrendings.json */; };
-		07A34DC921E29C2400B05857 /* Languages.json in Resources */ = {isa = PBXBuildFile; fileRef = 07A34DC821E29C2400B05857 /* Languages.json */; };
-		07AD1549227F3B0800FC8109 /* RepositoryIssueComments.json in Resources */ = {isa = PBXBuildFile; fileRef = 07AD1548227F3B0800FC8109 /* RepositoryIssueComments.json */; };
-		07B2C1F9213AF74B00FE7AC0 /* Profile.json in Resources */ = {isa = PBXBuildFile; fileRef = 07B2C1F8213AF74B00FE7AC0 /* Profile.json */; };
-		07B2DBCC226869F40093DB72 /* EventsOrganization.json in Resources */ = {isa = PBXBuildFile; fileRef = 07B2DBCB226869F40093DB72 /* EventsOrganization.json */; };
 		07CE0F8021027DEC00E1F6BD /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CE0F7F21027DEC00E1F6BD /* ThemeManager.swift */; };
-		07D46E5521920E8D008E5369 /* RepositoryReadme.json in Resources */ = {isa = PBXBuildFile; fileRef = 07D46E5421920E8D008E5369 /* RepositoryReadme.json */; };
-		07D46E5721920EDF008E5369 /* RepositoryContents.json in Resources */ = {isa = PBXBuildFile; fileRef = 07D46E5621920EDF008E5369 /* RepositoryContents.json */; };
 		07D46E6521922278008E5369 /* Foundation+SwiftHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D46E6421922278008E5369 /* Foundation+SwiftHub.swift */; };
-		07DFF6D320E90502004DAA68 /* Repository.json in Resources */ = {isa = PBXBuildFile; fileRef = 07DFF6D220E90502004DAA68 /* Repository.json */; };
-		07DFF6D520E90574004DAA68 /* UserSearch.json in Resources */ = {isa = PBXBuildFile; fileRef = 07DFF6D420E90574004DAA68 /* UserSearch.json */; };
-		07DFF6D720E90584004DAA68 /* RepositorySearch.json in Resources */ = {isa = PBXBuildFile; fileRef = 07DFF6D620E90584004DAA68 /* RepositorySearch.json */; };
-		07E1B30A21A4538B00F6EAE3 /* RepositoryIssues.json in Resources */ = {isa = PBXBuildFile; fileRef = 07E1B30921A4538B00F6EAE3 /* RepositoryIssues.json */; };
 		07F9E464223401F30012BA6D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F9E463223401F30012BA6D /* API.swift */; };
 		07F9E467223405410012BA6D /* RestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F9E466223405410012BA6D /* RestApi.swift */; };
 		07F9E469223406270012BA6D /* GraphApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F9E468223406270012BA6D /* GraphApi.swift */; };
@@ -71,17 +40,15 @@
 		2C107133246CE75D003FF1B3 /* SPHHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C107131246CE75D003FF1B3 /* SPHHomeCell.xib */; };
 		2CA9404D246D4F260034E346 /* SphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA9404C246D4F260034E346 /* SphTests.swift */; };
 		2CA94050246D8D190034E346 /* SPHHomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA9404F246D8D190034E346 /* SPHHomeViewModelTests.swift */; };
+		2CA94052246E44780034E346 /* Sph.json in Resources */ = {isa = PBXBuildFile; fileRef = 2CA94051246E44780034E346 /* Sph.json */; };
 		A00C54C920E25B5A00DA5F98 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00C54C820E25B5A00DA5F98 /* StackView.swift */; };
 		A017B3DB1E92995300E4FCED /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A017B3DA1E92995300E4FCED /* SplitViewController.swift */; };
 		A024C7C621BAB5F400FEA133 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A024C7C521BAB5F400FEA133 /* GoogleService-Info.plist */; };
-		A034AF7F215287B2004C310B /* Notifications.json in Resources */ = {isa = PBXBuildFile; fileRef = A034AF7E215287B2004C310B /* Notifications.json */; };
-		A034AF8121529194004C310B /* NotificationsRepository.json in Resources */ = {isa = PBXBuildFile; fileRef = A034AF8021529193004C310B /* NotificationsRepository.json */; };
 		A07DB584223FC02E000E3312 /* User.graphql in Resources */ = {isa = PBXBuildFile; fileRef = A07DB583223FC02E000E3312 /* User.graphql */; };
 		A088B12921008FDF0093D248 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A088B12821008FDF0093D248 /* WebViewController.swift */; };
 		A09499561E1D1CB600EFDE29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09499551E1D1CB600EFDE29 /* AppDelegate.swift */; };
 		A094996B1E1D1CB700EFDE29 /* SwiftHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A094996A1E1D1CB700EFDE29 /* SwiftHubTests.swift */; };
 		A09499761E1D1CB700EFDE29 /* SwiftHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09499751E1D1CB700EFDE29 /* SwiftHubUITests.swift */; };
-		A09DE8AF20E7A99000F6F2BF /* UserRepositories.json in Resources */ = {isa = PBXBuildFile; fileRef = A09DE8AA20E7A98F00F6F2BF /* UserRepositories.json */; };
 		A09DE8C920E7B8F400F6F2BF /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DE8C820E7B8F400F6F2BF /* ViewModelType.swift */; };
 		A09DE8CC20E7BEBD00F6F2BF /* DefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DE8CB20E7BEBD00F6F2BF /* DefaultTableViewCell.swift */; };
 		A09DE8D020E7C05C00F6F2BF /* Kingfisher+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DE8CF20E7C05C00F6F2BF /* Kingfisher+Rx.swift */; };
@@ -91,16 +58,8 @@
 		A09DE8DD20E7C82E00F6F2BF /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DE8DC20E7C82E00F6F2BF /* SearchBar.swift */; };
 		A09DE8E120EB9B2500F6F2BF /* SlideImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DE8E020EB9B2500F6F2BF /* SlideImageView.swift */; };
 		A09DE8E320EBB75700F6F2BF /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DE8E220EBB75700F6F2BF /* SnapshotHelper.swift */; };
-		A0CE88B621C28D9200C4C0E5 /* EmptyArray.json in Resources */ = {isa = PBXBuildFile; fileRef = A0CE88B521C28D9200C4C0E5 /* EmptyArray.json */; };
-		A0CE88B821C28DA700C4C0E5 /* EmptyObject.json in Resources */ = {isa = PBXBuildFile; fileRef = A0CE88B721C28DA700C4C0E5 /* EmptyObject.json */; };
-		A0E2B07A2101FCE4000DA282 /* UserFollowers.json in Resources */ = {isa = PBXBuildFile; fileRef = A0E2B0792101FCE4000DA282 /* UserFollowers.json */; };
-		A0E2B07C2101FCF4000DA282 /* UserFollowing.json in Resources */ = {isa = PBXBuildFile; fileRef = A0E2B07B2101FCF4000DA282 /* UserFollowing.json */; };
-		A0E2B07E2102025A000DA282 /* UserRepositoriesStarred.json in Resources */ = {isa = PBXBuildFile; fileRef = A0E2B07D2102025A000DA282 /* UserRepositoriesStarred.json */; };
 		A0E2B08D2106293A000DA282 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E2B08C2106293A000DA282 /* Switch.swift */; };
 		A0E2B091210738C9000DA282 /* KafkaRefresh+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E2B090210738C9000DA282 /* KafkaRefresh+Rx.swift */; };
-		A0E2B0932108AFF0000DA282 /* RepositoryWatchers.json in Resources */ = {isa = PBXBuildFile; fileRef = A0E2B0922108AFF0000DA282 /* RepositoryWatchers.json */; };
-		A0E2B0952108B00D000DA282 /* RepositoryStargazers.json in Resources */ = {isa = PBXBuildFile; fileRef = A0E2B0942108B00D000DA282 /* RepositoryStargazers.json */; };
-		A0E2B0972108B024000DA282 /* RepositoryForks.json in Resources */ = {isa = PBXBuildFile; fileRef = A0E2B0962108B024000DA282 /* RepositoryForks.json */; };
 		C762C6231E1D414B00C09EBD /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762C6221E1D414B00C09EBD /* R.generated.swift */; };
 		C762C6251E1D417C00C09EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C762C6241E1D417C00C09EBD /* Assets.xcassets */; };
 		C762C65F1E1D559000C09EBD /* BarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762C6501E1D559000C09EBD /* BarButtonItem.swift */; };
@@ -162,50 +121,19 @@
 		070E06C62214940800141262 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
 		070E06C72214940800141262 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		070E06C92214940800141262 /* Snapfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Snapfile; sourceTree = "<group>"; };
-		070FF83F20F2250F0070F5E8 /* User.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
-		070FF84120F225200070F5E8 /* Organization.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Organization.json; sourceTree = "<group>"; };
 		07178A60220F581C0020AE12 /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
 		0722DB1B22BF779F00C32A01 /* DefaultTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCellViewModel.swift; sourceTree = "<group>"; };
-		07241D0421B1740000F800BD /* RepositoryCommits.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositoryCommits.json; sourceTree = "<group>"; };
-		07241D0621B1741800F800BD /* RepositoryCommit.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositoryCommit.json; sourceTree = "<group>"; };
-		07241D0821B1742700F800BD /* RepositoryBranches.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositoryBranches.json; sourceTree = "<group>"; };
-		07241D0A21B1743900F800BD /* RepositoryBranch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositoryBranch.json; sourceTree = "<group>"; };
-		07241D0C21B1744900F800BD /* RepositoryPullRequests.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositoryPullRequests.json; sourceTree = "<group>"; };
-		07241D0E21B1745D00F800BD /* RepositoryPullRequest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositoryPullRequest.json; sourceTree = "<group>"; };
-		072B8ED921B4143200B2C28C /* RepositoryContributors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositoryContributors.json; sourceTree = "<group>"; };
-		072BD797225FD4F200E6C580 /* RepositoryReleases.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositoryReleases.json; sourceTree = "<group>"; };
-		072BD799225FD50400E6C580 /* RepositoryRelease.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositoryRelease.json; sourceTree = "<group>"; };
-		073204542141377D00C1E39F /* Events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Events.json; sourceTree = "<group>"; };
-		073204562141379500C1E39F /* EventsRepository.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EventsRepository.json; sourceTree = "<group>"; };
-		07320458214137A800C1E39F /* EventsUserReceived.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EventsUserReceived.json; sourceTree = "<group>"; };
-		0732045A214137B800C1E39F /* EventsUserPerformed.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EventsUserPerformed.json; sourceTree = "<group>"; };
 		0732046921419DB200C1E39F /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8601DateTransform.swift; sourceTree = "<group>"; };
 		073A1F782233F2F000D6F487 /* Search.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Search.graphql; sourceTree = "<group>"; };
-		074DBBED2448A0480062B35F /* RepositoryNumberOfLines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RepositoryNumberOfLines.json; sourceTree = "<group>"; };
 		0751F7A9246B044800E42751 /* TableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModel.swift; sourceTree = "<group>"; };
 		0757B53B2166A6A000C04163 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		0758D7DF2222C20200E99DDD /* UserRepositoriesWatching.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UserRepositoriesWatching.json; sourceTree = "<group>"; };
-		075A55CE228845F8004DF9F7 /* RepositoryPullRequestComments.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositoryPullRequestComments.json; sourceTree = "<group>"; };
-		075A55D0228850A5004DF9F7 /* RepositoryIssue.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositoryIssue.json; sourceTree = "<group>"; };
 		075AB1A920F2988F00B7E923 /* Pods-SwiftHub-acknowledgements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Pods-SwiftHub-acknowledgements.plist"; path = "Pods/Target Support Files/Pods-SwiftHub/Pods-SwiftHub-acknowledgements.plist"; sourceTree = SOURCE_ROOT; };
 		075E75E421D2C6B200213683 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		079BF51621FF618500FFA334 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		079E1AE121CC0D1D00C9448B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		07A34DC421E29ACC00B05857 /* RepositoryTrendings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositoryTrendings.json; sourceTree = "<group>"; };
-		07A34DC621E29BE200B05857 /* UserTrendings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserTrendings.json; sourceTree = "<group>"; };
-		07A34DC821E29C2400B05857 /* Languages.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Languages.json; sourceTree = "<group>"; };
 		07A4ADB121E89899001D198F /* PRIVACY_POLICY.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = PRIVACY_POLICY.md; sourceTree = SOURCE_ROOT; };
-		07AD1548227F3B0800FC8109 /* RepositoryIssueComments.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositoryIssueComments.json; sourceTree = "<group>"; };
-		07B2C1F8213AF74B00FE7AC0 /* Profile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Profile.json; sourceTree = "<group>"; };
-		07B2DBCB226869F40093DB72 /* EventsOrganization.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EventsOrganization.json; sourceTree = "<group>"; };
 		07CE0F7F21027DEC00E1F6BD /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
-		07D46E5421920E8D008E5369 /* RepositoryReadme.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositoryReadme.json; sourceTree = "<group>"; };
-		07D46E5621920EDF008E5369 /* RepositoryContents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositoryContents.json; sourceTree = "<group>"; };
 		07D46E6421922278008E5369 /* Foundation+SwiftHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+SwiftHub.swift"; sourceTree = "<group>"; };
-		07DFF6D220E90502004DAA68 /* Repository.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Repository.json; sourceTree = "<group>"; };
-		07DFF6D420E90574004DAA68 /* UserSearch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserSearch.json; sourceTree = "<group>"; };
-		07DFF6D620E90584004DAA68 /* RepositorySearch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositorySearch.json; sourceTree = "<group>"; };
-		07E1B30921A4538B00F6EAE3 /* RepositoryIssues.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositoryIssues.json; sourceTree = "<group>"; };
 		07F9E4612234010C0012BA6D /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		07F9E463223401F30012BA6D /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		07F9E466223405410012BA6D /* RestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApi.swift; sourceTree = "<group>"; };
@@ -230,6 +158,7 @@
 		2C107131246CE75D003FF1B3 /* SPHHomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SPHHomeCell.xib; path = SphHome/SPHHomeCell.xib; sourceTree = "<group>"; };
 		2CA9404C246D4F260034E346 /* SphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SphTests.swift; sourceTree = "<group>"; };
 		2CA9404F246D8D190034E346 /* SPHHomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SPHHomeViewModelTests.swift; path = SPH/SPHHomeViewModelTests.swift; sourceTree = "<group>"; };
+		2CA94051246E44780034E346 /* Sph.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sph.json; sourceTree = "<group>"; };
 		3796635402BD18001EDA5A16 /* Pods-SwiftHubUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftHubUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftHubUITests/Pods-SwiftHubUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3843260FF1EFDD3029A69CCB /* Pods-SwiftHubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftHubTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftHubTests/Pods-SwiftHubTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3E6D5D7DF286987ECF4F8FDD /* Pods_SwiftHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -241,8 +170,6 @@
 		A00C54C820E25B5A00DA5F98 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		A017B3DA1E92995300E4FCED /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		A024C7C521BAB5F400FEA133 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A034AF7E215287B2004C310B /* Notifications.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Notifications.json; sourceTree = "<group>"; };
-		A034AF8021529193004C310B /* NotificationsRepository.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NotificationsRepository.json; sourceTree = "<group>"; };
 		A07DB583223FC02E000E3312 /* User.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = User.graphql; sourceTree = "<group>"; };
 		A088B12821008FDF0093D248 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		A09499521E1D1CB600EFDE29 /* SwiftHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -254,7 +181,6 @@
 		A09499711E1D1CB700EFDE29 /* SwiftHubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftHubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09499751E1D1CB700EFDE29 /* SwiftHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftHubUITests.swift; sourceTree = "<group>"; };
 		A09499771E1D1CB700EFDE29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A09DE8AA20E7A98F00F6F2BF /* UserRepositories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UserRepositories.json; sourceTree = "<group>"; };
 		A09DE8C820E7B8F400F6F2BF /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		A09DE8CB20E7BEBD00F6F2BF /* DefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCell.swift; sourceTree = "<group>"; };
 		A09DE8CF20E7C05C00F6F2BF /* Kingfisher+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kingfisher+Rx.swift"; sourceTree = "<group>"; };
@@ -264,16 +190,8 @@
 		A09DE8DC20E7C82E00F6F2BF /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		A09DE8E020EB9B2500F6F2BF /* SlideImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideImageView.swift; sourceTree = "<group>"; };
 		A09DE8E220EBB75700F6F2BF /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
-		A0CE88B521C28D9200C4C0E5 /* EmptyArray.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmptyArray.json; sourceTree = "<group>"; };
-		A0CE88B721C28DA700C4C0E5 /* EmptyObject.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmptyObject.json; sourceTree = "<group>"; };
-		A0E2B0792101FCE4000DA282 /* UserFollowers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserFollowers.json; sourceTree = "<group>"; };
-		A0E2B07B2101FCF4000DA282 /* UserFollowing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserFollowing.json; sourceTree = "<group>"; };
-		A0E2B07D2102025A000DA282 /* UserRepositoriesStarred.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserRepositoriesStarred.json; sourceTree = "<group>"; };
 		A0E2B08C2106293A000DA282 /* Switch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
 		A0E2B090210738C9000DA282 /* KafkaRefresh+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KafkaRefresh+Rx.swift"; sourceTree = "<group>"; };
-		A0E2B0922108AFF0000DA282 /* RepositoryWatchers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositoryWatchers.json; sourceTree = "<group>"; };
-		A0E2B0942108B00D000DA282 /* RepositoryStargazers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositoryStargazers.json; sourceTree = "<group>"; };
-		A0E2B0962108B024000DA282 /* RepositoryForks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RepositoryForks.json; sourceTree = "<group>"; };
 		AB30C56D3A94C8B749FE468F /* Pods-SwiftHubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftHubUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftHubUITests/Pods-SwiftHubUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C762C6221E1D414B00C09EBD /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		C762C6241E1D417C00C09EBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -580,48 +498,7 @@
 		A09DE8A820E7A98F00F6F2BF /* Stubbed Responses */ = {
 			isa = PBXGroup;
 			children = (
-				A0CE88B521C28D9200C4C0E5 /* EmptyArray.json */,
-				A0CE88B721C28DA700C4C0E5 /* EmptyObject.json */,
-				073204542141377D00C1E39F /* Events.json */,
-				07B2DBCB226869F40093DB72 /* EventsOrganization.json */,
-				073204562141379500C1E39F /* EventsRepository.json */,
-				0732045A214137B800C1E39F /* EventsUserPerformed.json */,
-				07320458214137A800C1E39F /* EventsUserReceived.json */,
-				07A34DC821E29C2400B05857 /* Languages.json */,
-				A034AF7E215287B2004C310B /* Notifications.json */,
-				A034AF8021529193004C310B /* NotificationsRepository.json */,
-				070FF84120F225200070F5E8 /* Organization.json */,
-				07B2C1F8213AF74B00FE7AC0 /* Profile.json */,
-				07DFF6D220E90502004DAA68 /* Repository.json */,
-				07241D0A21B1743900F800BD /* RepositoryBranch.json */,
-				07241D0821B1742700F800BD /* RepositoryBranches.json */,
-				07241D0621B1741800F800BD /* RepositoryCommit.json */,
-				07241D0421B1740000F800BD /* RepositoryCommits.json */,
-				07D46E5621920EDF008E5369 /* RepositoryContents.json */,
-				072B8ED921B4143200B2C28C /* RepositoryContributors.json */,
-				A0E2B0962108B024000DA282 /* RepositoryForks.json */,
-				075A55D0228850A5004DF9F7 /* RepositoryIssue.json */,
-				07AD1548227F3B0800FC8109 /* RepositoryIssueComments.json */,
-				07E1B30921A4538B00F6EAE3 /* RepositoryIssues.json */,
-				074DBBED2448A0480062B35F /* RepositoryNumberOfLines.json */,
-				07241D0E21B1745D00F800BD /* RepositoryPullRequest.json */,
-				075A55CE228845F8004DF9F7 /* RepositoryPullRequestComments.json */,
-				07241D0C21B1744900F800BD /* RepositoryPullRequests.json */,
-				07D46E5421920E8D008E5369 /* RepositoryReadme.json */,
-				072BD799225FD50400E6C580 /* RepositoryRelease.json */,
-				072BD797225FD4F200E6C580 /* RepositoryReleases.json */,
-				07DFF6D620E90584004DAA68 /* RepositorySearch.json */,
-				A0E2B0942108B00D000DA282 /* RepositoryStargazers.json */,
-				07A34DC421E29ACC00B05857 /* RepositoryTrendings.json */,
-				A0E2B0922108AFF0000DA282 /* RepositoryWatchers.json */,
-				070FF83F20F2250F0070F5E8 /* User.json */,
-				A0E2B0792101FCE4000DA282 /* UserFollowers.json */,
-				A0E2B07B2101FCF4000DA282 /* UserFollowing.json */,
-				A09DE8AA20E7A98F00F6F2BF /* UserRepositories.json */,
-				A0E2B07D2102025A000DA282 /* UserRepositoriesStarred.json */,
-				0758D7DF2222C20200E99DDD /* UserRepositoriesWatching.json */,
-				07DFF6D420E90574004DAA68 /* UserSearch.json */,
-				07A34DC621E29BE200B05857 /* UserTrendings.json */,
+				2CA94051246E44780034E346 /* Sph.json */,
 			);
 			path = "Stubbed Responses";
 			sourceTree = "<group>";
@@ -916,57 +793,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0E2B07E2102025A000DA282 /* UserRepositoriesStarred.json in Resources */,
-				0758D7E02222C20200E99DDD /* UserRepositoriesWatching.json in Resources */,
-				075A55CF228845F8004DF9F7 /* RepositoryPullRequestComments.json in Resources */,
-				07DFF6D720E90584004DAA68 /* RepositorySearch.json in Resources */,
-				A0CE88B821C28DA700C4C0E5 /* EmptyObject.json in Resources */,
-				A0E2B0932108AFF0000DA282 /* RepositoryWatchers.json in Resources */,
-				072BD79A225FD50400E6C580 /* RepositoryRelease.json in Resources */,
-				074DBBEE2448A0480062B35F /* RepositoryNumberOfLines.json in Resources */,
 				A07DB584223FC02E000E3312 /* User.graphql in Resources */,
 				073A1F792233F2F000D6F487 /* Search.graphql in Resources */,
-				A09DE8AF20E7A99000F6F2BF /* UserRepositories.json in Resources */,
-				073204552141377D00C1E39F /* Events.json in Resources */,
-				07DFF6D520E90574004DAA68 /* UserSearch.json in Resources */,
+				2CA94052246E44780034E346 /* Sph.json in Resources */,
 				A024C7C621BAB5F400FEA133 /* GoogleService-Info.plist in Resources */,
-				072BD798225FD4F200E6C580 /* RepositoryReleases.json in Resources */,
-				07AD1549227F3B0800FC8109 /* RepositoryIssueComments.json in Resources */,
-				07A34DC921E29C2400B05857 /* Languages.json in Resources */,
 				C762C6881E1D5C3A00C09EBD /* Icons.xcassets in Resources */,
-				07241D0B21B1743900F800BD /* RepositoryBranch.json in Resources */,
-				0732045B214137B800C1E39F /* EventsUserPerformed.json in Resources */,
 				0757B53A2166A6A000C04163 /* Localizable.strings in Resources */,
-				07B2C1F9213AF74B00FE7AC0 /* Profile.json in Resources */,
-				A0E2B0952108B00D000DA282 /* RepositoryStargazers.json in Resources */,
-				07241D0921B1742700F800BD /* RepositoryBranches.json in Resources */,
-				A0CE88B621C28D9200C4C0E5 /* EmptyArray.json in Resources */,
-				A0E2B07C2101FCF4000DA282 /* UserFollowing.json in Resources */,
 				075AB1AA20F2988F00B7E923 /* Pods-SwiftHub-acknowledgements.plist in Resources */,
-				07D46E5721920EDF008E5369 /* RepositoryContents.json in Resources */,
-				07A34DC521E29ACC00B05857 /* RepositoryTrendings.json in Resources */,
-				A0E2B07A2101FCE4000DA282 /* UserFollowers.json in Resources */,
-				07DFF6D320E90502004DAA68 /* Repository.json in Resources */,
-				072B8EDA21B4143200B2C28C /* RepositoryContributors.json in Resources */,
-				07241D0F21B1745D00F800BD /* RepositoryPullRequest.json in Resources */,
 				07FDBC0B223D090C00D72AFC /* Repository.graphql in Resources */,
-				A0E2B0972108B024000DA282 /* RepositoryForks.json in Resources */,
-				07241D0521B1740000F800BD /* RepositoryCommits.json in Resources */,
-				070FF84020F2250F0070F5E8 /* User.json in Resources */,
-				07A34DC721E29BE200B05857 /* UserTrendings.json in Resources */,
 				C762C6251E1D417C00C09EBD /* Assets.xcassets in Resources */,
 				2C107133246CE75D003FF1B3 /* SPHHomeCell.xib in Resources */,
-				07D46E5521920E8D008E5369 /* RepositoryReadme.json in Resources */,
-				07E1B30A21A4538B00F6EAE3 /* RepositoryIssues.json in Resources */,
-				A034AF8121529194004C310B /* NotificationsRepository.json in Resources */,
-				075A55D1228850A5004DF9F7 /* RepositoryIssue.json in Resources */,
-				073204572141379500C1E39F /* EventsRepository.json in Resources */,
-				07241D0721B1741800F800BD /* RepositoryCommit.json in Resources */,
-				A034AF7F215287B2004C310B /* Notifications.json in Resources */,
-				07B2DBCC226869F40093DB72 /* EventsOrganization.json in Resources */,
-				07241D0D21B1744900F800BD /* RepositoryPullRequests.json in Resources */,
-				07320459214137A800C1E39F /* EventsUserReceived.json in Resources */,
-				070FF84220F225200070F5E8 /* Organization.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -48,14 +48,11 @@ extension SphApi: TargetType, ProductAPIType {
         }
         return params
     }
-//    public var sampleData: Data {
-//       return "{}".data(using: String.Encoding.utf8)!
-//    }
 
     public var sampleData: Data {
         var dataUrl: URL?
         switch self {
-        case .datastoreSearch: dataUrl = R.file.repositoryNumberOfLinesJson()
+        case .datastoreSearch: dataUrl = R.file.sphJson()
         }
         if let url = dataUrl, let data = try? Data(contentsOf: url) {
             return data

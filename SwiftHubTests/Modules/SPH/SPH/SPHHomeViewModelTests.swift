@@ -26,8 +26,8 @@ class SPHHomeViewModelTests: QuickSpec {
             viewModel = nil // Force viewModel to deallocate and stop syncing.
         }
         
-        describe("users list from profile") {
-            it("followers") {
+        describe("SPHHomeViewModel output") {
+            it("SPHHomeViewModel") {
                 let id = "a807b7ab-6cad-4aa6-87d0-e283a7353a0f"
                 viewModel = SPHHomeViewModel(id: id, provider: provider)
                 self.testViewModel(viewModel: viewModel, disposeBag: disposeBag)
@@ -46,7 +46,7 @@ class SPHHomeViewModelTests: QuickSpec {
         expect(output.items.value.count) == 0
         expect(viewModel.page) == 1
         headerRefresh.onNext(())
-        expect(output.items.value.count) == 0
+        expect(output.items.value.count) == 2
         expect(viewModel.page) == 1
     }
 }
