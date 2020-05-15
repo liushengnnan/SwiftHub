@@ -80,13 +80,3 @@ class LibsManager: NSObject {
         NVActivityIndicatorView.DEFAULT_COLOR = .secondary()
     }
 }
-
-extension LibsManager {
-    func removeKingfisherCache() -> Observable<Void> {
-        return ImageCache.default.rx.clearCache()
-    }
-
-    func kingfisherCacheSize() -> Observable<Int> {
-        return ImageCache.default.rx.retrieveCacheSize()
-    }
-}
