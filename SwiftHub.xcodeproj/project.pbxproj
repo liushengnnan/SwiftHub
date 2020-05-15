@@ -40,7 +40,6 @@
 		A024C7C621BAB5F400FEA133 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A024C7C521BAB5F400FEA133 /* GoogleService-Info.plist */; };
 		A088B12921008FDF0093D248 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A088B12821008FDF0093D248 /* WebViewController.swift */; };
 		A09499561E1D1CB600EFDE29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09499551E1D1CB600EFDE29 /* AppDelegate.swift */; };
-		A094996B1E1D1CB700EFDE29 /* SwiftHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A094996A1E1D1CB700EFDE29 /* SwiftHubTests.swift */; };
 		A09499761E1D1CB700EFDE29 /* SwiftHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09499751E1D1CB700EFDE29 /* SwiftHubUITests.swift */; };
 		A09DE8C920E7B8F400F6F2BF /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DE8C820E7B8F400F6F2BF /* ViewModelType.swift */; };
 		A09DE8CC20E7BEBD00F6F2BF /* DefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DE8CB20E7BEBD00F6F2BF /* DefaultTableViewCell.swift */; };
@@ -161,7 +160,6 @@
 		A09499551E1D1CB600EFDE29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A09499611E1D1CB700EFDE29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		A09499661E1D1CB700EFDE29 /* SwiftHubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftHubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A094996A1E1D1CB700EFDE29 /* SwiftHubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftHubTests.swift; sourceTree = "<group>"; };
 		A094996C1E1D1CB700EFDE29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A09499711E1D1CB700EFDE29 /* SwiftHubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftHubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09499751E1D1CB700EFDE29 /* SwiftHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftHubUITests.swift; sourceTree = "<group>"; };
@@ -434,7 +432,6 @@
 				A094996C1E1D1CB700EFDE29 /* Info.plist */,
 				0709DD78220A1C3F00F379FA /* Models */,
 				A0AEB3A4220D8CAD00A4B2AA /* Modules */,
-				A094996A1E1D1CB700EFDE29 /* SwiftHubTests.swift */,
 			);
 			path = SwiftHubTests;
 			sourceTree = "<group>";
@@ -1093,7 +1090,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A094996B1E1D1CB700EFDE29 /* SwiftHubTests.swift in Sources */,
 				2CA9404D246D4F260034E346 /* SphTests.swift in Sources */,
 				2CA94050246D8D190034E346 /* SPHHomeViewModelTests.swift in Sources */,
 			);
