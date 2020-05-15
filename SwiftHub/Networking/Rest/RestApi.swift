@@ -16,13 +16,8 @@ import Alamofire
 
 typealias MoyaError = Moya.MoyaError
 
-enum ApiError: Error {
-    case serverError(response: ErrorResponse)
-}
-
 class RestApi: NetAPI {
     let sphProvider: SphNetworking
-    
     init(sphProvider: SphNetworking) {
         self.sphProvider = sphProvider
     }

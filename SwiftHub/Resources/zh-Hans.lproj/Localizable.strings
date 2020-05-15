@@ -1,27 +1,9 @@
 /* Localizable.strings
 
 /* 共同 */
-"Common.Yes" = "是";
-"Common.No" = "否";
-"Common.OK" = "好的";
-"Common.Cancel" = "取消";
-"Common.Done" = "完成";
-"Common.Back" = "返回";
-"Common.Close" = "关闭";
-"Common.Edit" = "编辑";
-"Common.Next" = "下一步";
-"Common.Skip" = "跳过";
-"Common.Reset" = "重置";
-"Common.Save" = "保存";
-"Common.Delete" = "删除";
-"Common.Search" = "搜索";
-"Common.Success" = "成功";
-"Common.Error" = "错误";
 "Common.NoResults" = "没有结果";
 /* Toast */
 "Toast.ConnectionBack.Message" = "连接已恢复";
 "Toast.ConnectionLost.Message" = "没联系";
-/* Initial */
-"Initial.NoResults" = "欢迎来到 SPH Demo ！";
 /* SPH */
 "SPH.Home" = " 主页";

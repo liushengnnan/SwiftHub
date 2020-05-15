@@ -21,36 +21,15 @@ protocol ViewModelType {
 class ViewModel: NSObject {
 
     let provider: NetAPI
-
     var page = 1
 
     let loading = ActivityIndicator()
     let headerLoading = ActivityIndicator()
     let footerLoading = ActivityIndicator()
 
-    let error = ErrorTracker()
-    let parsedError = PublishSubject<ApiError>()
-
     init(provider: NetAPI) {
         self.provider = provider
         super.init()
-
-        error.asObservable().map { (error) -> ApiError? in
-            do {
-                let errorResponse = error as? MoyaError
-                if let body = try errorResponse?.response?.mapJSON() as? [String: Any],
-                    let errorResponse = Mapper<ErrorResponse>().map(JSON: body) {
-                    return ApiError.serverError(response: errorResponse)
-                }
-            } catch {
-                print(error)
-            }
-            return nil
-        }.filterNil().bind(to: parsedError).disposed(by: rx.disposeBag)
-
-        error.asDriver().drive(onNext: { (error) in
-            logError("\(error)")
-        }).disposed(by: rx.disposeBag)
     }
 
     deinit {

@@ -30,8 +30,6 @@ class ViewController: UIViewController, Navigatable, NVActivityIndicatorViewable
     }
 
     let isLoading = BehaviorRelay(value: false)
-    let error = PublishSubject<ApiError>()
-
     var automaticallyAdjustsLeftBarButtonItem = true
     var canOpenFlex = true
 

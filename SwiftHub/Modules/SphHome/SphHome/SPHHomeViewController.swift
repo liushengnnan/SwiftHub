@@ -49,13 +49,5 @@ class SPHHomeViewController: TableViewController {
             .drive(tableView.rx.items(cellIdentifier: reuseIdentifier, cellType: SPHHomeCell.self)) { _, viewModel, cell in
                 cell.bind(to: viewModel)
         }.disposed(by: rx.disposeBag)
-
-        //        viewModel.branchSelected.subscribe(onNext: { [weak self] (branch) in
-        //            self?.navigator.pop(sender: self)
-        //        }).disposed(by: rx.disposeBag)
-        //
-        //        viewModel.error.asDriver().drive(onNext: { [weak self] (error) in
-        //            self?.showAlert(title: R.string.localizable.commonError.key.localized(), message: error.localizedDescription)
-        //        }).disposed(by: rx.disposeBag)
     }
 }

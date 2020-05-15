@@ -10,22 +10,16 @@ import Foundation
 import RxSwift
 import RxCocoa
 import SnapKit
-import IQKeyboardManagerSwift
 import CocoaLumberjack
 import Kingfisher
-import Fabric
-import Crashlytics
 import NVActivityIndicatorView
 import NSObject_Rx
 import RxViewController
 import RxOptional
 import RxGesture
 import SwifterSwift
-import SwiftDate
 import Hero
 import KafkaRefresh
-import Mixpanel
-import Firebase
 import DropDown
 import Toast_Swift
 
@@ -48,17 +42,14 @@ class LibsManager: NSObject {
 
         bannersEnabled.skip(1).subscribe(onNext: { (enabled) in
             UserDefaults.standard.set(enabled, forKey: Configs.UserDefaultsKeys.bannersEnabled)
-            analytics.set(.adsEnabled(value: enabled))
         }).disposed(by: rx.disposeBag)
     }
 
     func setupLibs(with window: UIWindow? = nil) {
         let libsManager = LibsManager.shared
         libsManager.setupCocoaLumberjack()
-        libsManager.setupAnalytics()
         libsManager.setupTheme()
         libsManager.setupKafkaRefresh()
-        libsManager.setupKeyboardManager()
         libsManager.setupActivityView()
         libsManager.setupDropDown()
         libsManager.setupToast()
@@ -105,9 +96,6 @@ class LibsManager: NSObject {
         NVActivityIndicatorView.DEFAULT_COLOR = .secondary()
     }
 
-    func setupKeyboardManager() {
-        IQKeyboardManager.shared.enable = true
-    }
 
     func setupCocoaLumberjack() {
         DDLog.add(DDOSLogger.sharedInstance)
@@ -115,14 +103,6 @@ class LibsManager: NSObject {
         fileLogger.rollingFrequency = TimeInterval(60*60*24)  // 24 hours
         fileLogger.logFileManager.maximumNumberOfLogFiles = 7
         DDLog.add(fileLogger)
-    }
-
-    func setupAnalytics() {
-        FirebaseApp.configure()
-        Mixpanel.initialize(token: Keys.mixpanel.apiKey)
-        Fabric.with([Crashlytics.self])
-        Fabric.sharedSDK().debug = false
-        FirebaseConfiguration.shared.setLoggerLevel(.min)
     }
 }
 

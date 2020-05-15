@@ -1,27 +1,9 @@
 /* Localizable.strings
 
 /* Common */
-"Common.Yes" = "Yes";
-"Common.No" = "No";
-"Common.OK" = "OK";
-"Common.Cancel" = "Cancel";
-"Common.Done" = "Done";
-"Common.Back" = "Back";
-"Common.Close" = "Close";
-"Common.Edit" = "Edit";
-"Common.Next" = "Next";
-"Common.Skip" = "Skip";
-"Common.Reset" = "Reset";
-"Common.Save" = "Save";
-"Common.Delete" = "Delete";
-"Common.Search" = "Search";
-"Common.Success" = "Success";
-"Common.Error" = "Error";
 "Common.NoResults" = "No Results";
 /* Toast */
 "Toast.ConnectionBack.Message" = "Back online";
 "Toast.ConnectionLost.Message" = "No connection";
-/* Initial */
-"Initial.NoResults" = "Welcome to SPH Demo!";
 /* SPH */
 "SPH.Home" = "Home";

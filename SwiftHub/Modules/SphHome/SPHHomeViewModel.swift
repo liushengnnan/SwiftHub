@@ -18,19 +18,15 @@ class SPHHomeViewModel: ViewModel, ViewModelType {
         self.id = id
         super.init(provider: provider)
     }
-    
     struct Input {
         let selection: Driver<SPHHomeCellModel>
         let headerRefresh: Observable<Void>
     }
-    
     struct Output {
         let items: BehaviorRelay<[SPHHomeCellModel]>
     }
-    
     func transform(input: Input) -> Output {
         let elements = BehaviorRelay<[SPHHomeCellModel]>(value: [])
-        
         input.headerRefresh.flatMapLatest({ [weak self] () -> Observable<[SPHHomeCellModel]> in
             guard let self = self else { return Observable.just([]) }
             self.page = 1
@@ -40,14 +36,11 @@ class SPHHomeViewModel: ViewModel, ViewModelType {
             .subscribe(onNext: { (items) in
                 elements.accept(items)
             }).disposed(by: rx.disposeBag)
-        
         return Output(items: elements)
     }
-    
     func request(id: String) -> Observable<[SPHHomeCellModel]> {
         return provider.datastoreSearch(id: id, limit: nil, quary: nil)
             .trackActivity(loading)
-            .trackError(error)
             .map {
                 let yearRecords = YearRecord.convertToYearRecords(records: $0.result!.records!)
                 return yearRecords.map({ (record) -> SPHHomeCellModel in

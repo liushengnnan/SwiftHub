@@ -8,27 +8,7 @@
 
 import UIKit
 
-// All keys are demonstrative and used for the test.
-enum Keys {
-    case github, mixpanel
-
-    var apiKey: String {
-        switch self {
-        case .github: return ""
-        case .mixpanel: return ""
-        }
-    }
-
-    var appId: String {
-        switch self {
-        case .github: return ""
-        case .mixpanel: return ""
-        }
-    }
-}
-
 struct Configs {
-
     struct App {
         static let bundleIdentifier = "com.liusn.SphDemo"
     }

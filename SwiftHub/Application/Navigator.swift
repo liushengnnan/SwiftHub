@@ -12,8 +12,6 @@ import RxSwift
 import RxCocoa
 import SafariServices
 import Hero
-import AcknowList
-import WhatsNewKit
 import MessageUI
 
 protocol Navigatable {

@@ -25,10 +25,6 @@ target 'SwiftHub' do
     # Image
     pod 'Kingfisher', '~> 5.0'  # https://github.com/onevcat/Kingfisher
 
-    # Date
-    pod 'DateToolsSwift', '~> 5.0'  # https://github.com/MatthewYork/DateTools
-    pod 'SwiftDate', '~> 6.0'  # https://github.com/malcommac/SwiftDate
-
     # Tools
     pod 'R.swift', '~> 5.0'  # https://github.com/mac-cain13/R.swift
     pod 'SwiftLint', '0.39.2'  # https://github.com/realm/SwiftLint
@@ -36,47 +32,27 @@ target 'SwiftHub' do
     # Keychain
     pod 'KeychainAccess', '~> 4.0'  # https://github.com/kishikawakatsumi/KeychainAccess
 
-    # Fabric
-    pod 'Fabric'
-    pod 'Crashlytics'
-
     # UI
     pod 'NVActivityIndicatorView', '~> 4.0'  # https://github.com/ninjaprox/NVActivityIndicatorView
-    pod 'ImageSlideshow/Kingfisher', '~> 1.8'  # https://github.com/zvonicek/ImageSlideshow
     pod 'DZNEmptyDataSet', '~> 1.0'  # https://github.com/dzenbot/DZNEmptyDataSet
     pod 'Hero', :git => 'https://github.com/HeroTransitions/Hero.git', :branch => 'develop'  # https://github.com/lkzhao/Hero
     pod 'Localize-Swift', '~> 3.0'  # https://github.com/marmelroy/Localize-Swift
     pod 'RAMAnimatedTabBarController', '5.0.1'  # https://github.com/Ramotion/animated-tab-bar
-    pod 'AcknowList', '~> 1.8'  # https://github.com/vtourraine/AcknowList
     pod 'KafkaRefresh', '~> 1.0'  # https://github.com/OpenFeyn/KafkaRefresh
-    pod 'WhatsNewKit', '~> 1.0'  # https://github.com/SvenTiigi/WhatsNewKit
     pod 'Highlightr', '~> 2.0'  # https://github.com/raspu/Highlightr
     pod 'DropDown', '~> 2.0'  # https://github.com/AssistoLab/DropDown
     pod 'Toast-Swift', '~> 5.0'  # https://github.com/scalessec/Toast-Swift
-    pod 'HMSegmentedControl', '~> 1.0'  # https://github.com/HeshamMegid/HMSegmentedControl
-    pod 'FloatingPanel', '~> 1.0'  # https://github.com/SCENEE/FloatingPanel
-    pod 'MessageKit', '~> 3.0'  # https://github.com/MessageKit/MessageKit
-    pod 'MultiProgressView', '~> 1.0'  # https://github.com/mac-gallagher/MultiProgressView
-    pod 'Charts', '~> 3.0'  # https://github.com/danielgindi/Charts
     
-    # Keyboard
-    pod 'IQKeyboardManagerSwift', '~> 6.0'  # https://github.com/hackiftekhar/IQKeyboardManager
-
     # Auto Layout
     pod 'SnapKit', '~> 5.0'  # https://github.com/SnapKit/SnapKit
 
     # Code Quality
-    pod 'FLEX', '~> 4.0', :configurations => ['Debug']  # https://github.com/Flipboard/FLEX
     pod 'SwifterSwift', '~> 5.0'  # https://github.com/SwifterSwift/SwifterSwift
     pod 'BonMot', '~> 5.0'  # https://github.com/Rightpoint/BonMot
 
     # Logging
     pod 'CocoaLumberjack/Swift', '~> 3.0'  # https://github.com/CocoaLumberjack/CocoaLumberjack
 
-    # Analytics
-    pod 'Mixpanel-swift', '~> 2.0'  # https://github.com/mixpanel/mixpanel-iphone
-    pod 'Firebase/Analytics'
-    
     target 'SwiftHubTests' do
         inherit! :search_paths
         # Pods for testing

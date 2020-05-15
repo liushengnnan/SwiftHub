@@ -10,13 +10,10 @@
 		0722DB1C22BF779F00C32A01 /* DefaultTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0722DB1B22BF779F00C32A01 /* DefaultTableViewCellViewModel.swift */; };
 		0751F7AA246B044800E42751 /* TableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0751F7A9246B044800E42751 /* TableViewCellViewModel.swift */; };
 		0757B53A2166A6A000C04163 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0757B53C2166A6A000C04163 /* Localizable.strings */; };
-		075AB1AA20F2988F00B7E923 /* Pods-SwiftHub-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 075AB1A920F2988F00B7E923 /* Pods-SwiftHub-acknowledgements.plist */; };
-		079BF51721FF618500FFA334 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079BF51621FF618500FFA334 /* ErrorResponse.swift */; };
 		07CE0F8021027DEC00E1F6BD /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CE0F7F21027DEC00E1F6BD /* ThemeManager.swift */; };
 		07F9E467223405410012BA6D /* RestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F9E466223405410012BA6D /* RestApi.swift */; };
 		07FC336E1FFFCB8B00D53888 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC336D1FFFCB8B00D53888 /* Application.swift */; };
 		07FC33701FFFCBF600D53888 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC336F1FFFCBF600D53888 /* Navigator.swift */; };
-		07FC337D1FFFE4E300D53888 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC337A1FFFE4E300D53888 /* AnalyticsManager.swift */; };
 		07FC337E1FFFE4E300D53888 /* LibsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC337B1FFFE4E300D53888 /* LibsManager.swift */; };
 		07FC337F1FFFE4E300D53888 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC337C1FFFE4E300D53888 /* LogManager.swift */; };
 		07FC33871FFFE68800D53888 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FC33861FFFE68800D53888 /* Api.swift */; };
@@ -34,13 +31,11 @@
 		2CA94052246E44780034E346 /* Sph.json in Resources */ = {isa = PBXBuildFile; fileRef = 2CA94051246E44780034E346 /* Sph.json */; };
 		2CA94056246EAD350034E346 /* CustomPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA94055246EAD350034E346 /* CustomPlugin.swift */; };
 		A00C54C920E25B5A00DA5F98 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00C54C820E25B5A00DA5F98 /* StackView.swift */; };
-		A024C7C621BAB5F400FEA133 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A024C7C521BAB5F400FEA133 /* GoogleService-Info.plist */; };
 		A09499561E1D1CB600EFDE29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09499551E1D1CB600EFDE29 /* AppDelegate.swift */; };
 		A09499761E1D1CB700EFDE29 /* SwiftHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09499751E1D1CB700EFDE29 /* SwiftHubUITests.swift */; };
 		A09DE8C920E7B8F400F6F2BF /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DE8C820E7B8F400F6F2BF /* ViewModelType.swift */; };
 		A09DE8CC20E7BEBD00F6F2BF /* DefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DE8CB20E7BEBD00F6F2BF /* DefaultTableViewCell.swift */; };
 		A09DE8D020E7C05C00F6F2BF /* Kingfisher+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DE8CF20E7C05C00F6F2BF /* Kingfisher+Rx.swift */; };
-		A09DE8D620E7C2C400F6F2BF /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DE8D320E7C2C400F6F2BF /* ErrorTracker.swift */; };
 		A09DE8D720E7C2C400F6F2BF /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DE8D520E7C2C400F6F2BF /* ActivityIndicator.swift */; };
 		A09DE8E320EBB75700F6F2BF /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DE8E220EBB75700F6F2BF /* SnapshotHelper.swift */; };
 		A0E2B091210738C9000DA282 /* KafkaRefresh+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E2B090210738C9000DA282 /* KafkaRefresh+Rx.swift */; };
@@ -98,15 +93,11 @@
 		0722DB1B22BF779F00C32A01 /* DefaultTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		0751F7A9246B044800E42751 /* TableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModel.swift; sourceTree = "<group>"; };
 		0757B53B2166A6A000C04163 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		075AB1A920F2988F00B7E923 /* Pods-SwiftHub-acknowledgements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Pods-SwiftHub-acknowledgements.plist"; path = "Pods/Target Support Files/Pods-SwiftHub/Pods-SwiftHub-acknowledgements.plist"; sourceTree = SOURCE_ROOT; };
-		079BF51621FF618500FFA334 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		079E1AE121CC0D1D00C9448B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		07A4ADB121E89899001D198F /* PRIVACY_POLICY.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = PRIVACY_POLICY.md; sourceTree = SOURCE_ROOT; };
 		07CE0F7F21027DEC00E1F6BD /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		07F9E466223405410012BA6D /* RestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApi.swift; sourceTree = "<group>"; };
 		07FC336D1FFFCB8B00D53888 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		07FC336F1FFFCBF600D53888 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
-		07FC337A1FFFE4E300D53888 /* AnalyticsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
 		07FC337B1FFFE4E300D53888 /* LibsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibsManager.swift; sourceTree = "<group>"; };
 		07FC337C1FFFE4E300D53888 /* LogManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
 		07FC33801FFFE52A00D53888 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
@@ -133,7 +124,6 @@
 		7DCE0F2B67EC0E2BD4A13391 /* Pods-SwiftHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftHub/Pods-SwiftHub.release.xcconfig"; sourceTree = "<group>"; };
 		9041AF0CD3CAF3CF6AD1E8E0 /* Pods_SwiftHubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftHubTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00C54C820E25B5A00DA5F98 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
-		A024C7C521BAB5F400FEA133 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A09499521E1D1CB600EFDE29 /* SwiftHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09499551E1D1CB600EFDE29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A09499611E1D1CB700EFDE29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
@@ -145,7 +135,6 @@
 		A09DE8C820E7B8F400F6F2BF /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		A09DE8CB20E7BEBD00F6F2BF /* DefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCell.swift; sourceTree = "<group>"; };
 		A09DE8CF20E7C05C00F6F2BF /* Kingfisher+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kingfisher+Rx.swift"; sourceTree = "<group>"; };
-		A09DE8D320E7C2C400F6F2BF /* ErrorTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
 		A09DE8D520E7C2C400F6F2BF /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		A09DE8E220EBB75700F6F2BF /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		A0E2B090210738C9000DA282 /* KafkaRefresh+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KafkaRefresh+Rx.swift"; sourceTree = "<group>"; };
@@ -261,7 +250,6 @@
 			children = (
 				A09DE8A820E7A98F00F6F2BF /* Stubbed Responses */,
 				2C10711E246C238D003FF1B3 /* SphApi.swift */,
-				079BF51621FF618500FFA334 /* ErrorResponse.swift */,
 				C762C68C1E1D5D6E00C09EBD /* Networking.swift */,
 				07F9E466223405410012BA6D /* RestApi.swift */,
 			);
@@ -302,8 +290,6 @@
 				0703ED1022186E1D0017136C /* .jazzy.yaml */,
 				07FC33801FFFE52A00D53888 /* .swiftlint.yml */,
 				C762C66E1E1D58B200C09EBD /* Configs.swift */,
-				075AB1A920F2988F00B7E923 /* Pods-SwiftHub-acknowledgements.plist */,
-				07A4ADB121E89899001D198F /* PRIVACY_POLICY.md */,
 				07FC33841FFFE54800D53888 /* README.md */,
 			);
 			path = Configs;
@@ -312,7 +298,6 @@
 		07FC33791FFFE4E300D53888 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				07FC337A1FFFE4E300D53888 /* AnalyticsManager.swift */,
 				07FC337B1FFFE4E300D53888 /* LibsManager.swift */,
 				07FC337C1FFFE4E300D53888 /* LogManager.swift */,
 				C762C68E1E1D5D6E00C09EBD /* Reachability.swift */,
@@ -432,18 +417,9 @@
 		A09DE8D120E7C2C400F6F2BF /* Third Party */ = {
 			isa = PBXGroup;
 			children = (
-				A09DE8D220E7C2C400F6F2BF /* RxErrorTracker */,
 				A09DE8D420E7C2C400F6F2BF /* RxActivityIndicator */,
 			);
 			path = "Third Party";
-			sourceTree = "<group>";
-		};
-		A09DE8D220E7C2C400F6F2BF /* RxErrorTracker */ = {
-			isa = PBXGroup;
-			children = (
-				A09DE8D320E7C2C400F6F2BF /* ErrorTracker.swift */,
-			);
-			path = RxErrorTracker;
 			sourceTree = "<group>";
 		};
 		A09DE8D420E7C2C400F6F2BF /* RxActivityIndicator */ = {
@@ -481,7 +457,6 @@
 				C762C6241E1D417C00C09EBD /* Assets.xcassets */,
 				C762C6871E1D5C3A00C09EBD /* Icons.xcassets */,
 				A09499611E1D1CB700EFDE29 /* Info.plist */,
-				A024C7C521BAB5F400FEA133 /* GoogleService-Info.plist */,
 				0757B53C2166A6A000C04163 /* Localizable.strings */,
 				C762C6221E1D414B00C09EBD /* R.generated.swift */,
 			);
@@ -558,7 +533,6 @@
 				A094994F1E1D1CB600EFDE29 /* Frameworks */,
 				A09499501E1D1CB600EFDE29 /* Resources */,
 				3FF22C3403C6B8870D286DEA /* [CP] Embed Pods Frameworks */,
-				A024C7C421BAA83200FEA133 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -665,10 +639,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CA94052246E44780034E346 /* Sph.json in Resources */,
-				A024C7C621BAB5F400FEA133 /* GoogleService-Info.plist in Resources */,
 				C762C6881E1D5C3A00C09EBD /* Icons.xcassets in Resources */,
 				0757B53A2166A6A000C04163 /* Localizable.strings in Resources */,
-				075AB1AA20F2988F00B7E923 /* Pods-SwiftHub-acknowledgements.plist in Resources */,
 				C762C6251E1D417C00C09EBD /* Assets.xcassets in Resources */,
 				2C107133246CE75D003FF1B3 /* SPHHomeCell.xib in Resources */,
 			);
@@ -698,37 +670,23 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftHub/Pods-SwiftHub-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AcknowList/AcknowList.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BonMot/BonMot.framework",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
-				"${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
-				"${BUILT_PRODUCTS_DIR}/FLEX/FLEX.framework",
-				"${BUILT_PRODUCTS_DIR}/FloatingPanel/FloatingPanel.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/HMSegmentedControl/HMSegmentedControl.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/Highlightr/Highlightr.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
-				"${BUILT_PRODUCTS_DIR}/InputBarAccessoryView/InputBarAccessoryView.framework",
 				"${BUILT_PRODUCTS_DIR}/KafkaRefresh/KafkaRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework",
-				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
-				"${BUILT_PRODUCTS_DIR}/Mixpanel-swift/Mixpanel.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/MultiProgressView/MultiProgressView.framework",
 				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -741,45 +699,28 @@
 				"${BUILT_PRODUCTS_DIR}/RxTheme/RxTheme.framework",
 				"${BUILT_PRODUCTS_DIR}/RxViewController/RxViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
 				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
-				"${BUILT_PRODUCTS_DIR}/WhatsNewKit/WhatsNewKit.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AcknowList.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BonMot.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateToolsSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLEX.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FloatingPanel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HMSegmentedControl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Highlightr.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InputBarAccessoryView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KafkaRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Localize_Swift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mixpanel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MultiProgressView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -792,11 +733,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTheme.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WhatsNewKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -810,49 +748,30 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftHubTests/Pods-SwiftHubTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftHubTests/Pods-SwiftHubTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		A024C7C421BAA83200FEA133 /* Fabric */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
-			);
-			name = Fabric;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" 37c93eb6b84ba3eec1d049949625a131b88c50e9 e78a1123b34d3307be55fc9565c8ea1ff601801ec3cd70679b70983042f95d33\n";
 		};
 		C762C6201E1D40D500C09EBD /* R.swift */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -966,18 +885,15 @@
 				07FC336E1FFFCB8B00D53888 /* Application.swift in Sources */,
 				A0E2B091210738C9000DA282 /* KafkaRefresh+Rx.swift in Sources */,
 				C762C6941E1D5D6E00C09EBD /* Reachability.swift in Sources */,
-				07FC337D1FFFE4E300D53888 /* AnalyticsManager.swift in Sources */,
 				2C107132246CE75D003FF1B3 /* SPHHomeCell.swift in Sources */,
 				C762C66D1E1D559000C09EBD /* ViewController.swift in Sources */,
 				C762C6641E1D559000C09EBD /* ImageView.swift in Sources */,
 				A09DE8D720E7C2C400F6F2BF /* ActivityIndicator.swift in Sources */,
-				A09DE8D620E7C2C400F6F2BF /* ErrorTracker.swift in Sources */,
 				2CA94056246EAD350034E346 /* CustomPlugin.swift in Sources */,
 				A00C54C920E25B5A00DA5F98 /* StackView.swift in Sources */,
 				C762C65F1E1D559000C09EBD /* BarButtonItem.swift in Sources */,
 				07FC33701FFFCBF600D53888 /* Navigator.swift in Sources */,
 				C762C6651E1D559000C09EBD /* Label.swift in Sources */,
-				079BF51721FF618500FFA334 /* ErrorResponse.swift in Sources */,
 				C762C6821E1D5A7300C09EBD /* UIColor+SwiftHub.swift in Sources */,
 				A09DE8D020E7C05C00F6F2BF /* Kingfisher+Rx.swift in Sources */,
 				2C10712D246C2C34003FF1B3 /* SPHHomeCellModel.swift in Sources */,
