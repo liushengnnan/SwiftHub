@@ -43,14 +43,12 @@
 		A09DE8D020E7C05C00F6F2BF /* Kingfisher+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DE8CF20E7C05C00F6F2BF /* Kingfisher+Rx.swift */; };
 		A09DE8D620E7C2C400F6F2BF /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DE8D320E7C2C400F6F2BF /* ErrorTracker.swift */; };
 		A09DE8D720E7C2C400F6F2BF /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DE8D520E7C2C400F6F2BF /* ActivityIndicator.swift */; };
-		A09DE8DB20E7C73900F6F2BF /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DE8DA20E7C73900F6F2BF /* SegmentedControl.swift */; };
 		A09DE8DD20E7C82E00F6F2BF /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DE8DC20E7C82E00F6F2BF /* SearchBar.swift */; };
 		A09DE8E320EBB75700F6F2BF /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DE8E220EBB75700F6F2BF /* SnapshotHelper.swift */; };
 		A0E2B091210738C9000DA282 /* KafkaRefresh+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E2B090210738C9000DA282 /* KafkaRefresh+Rx.swift */; };
 		C762C6231E1D414B00C09EBD /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762C6221E1D414B00C09EBD /* R.generated.swift */; };
 		C762C6251E1D417C00C09EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C762C6241E1D417C00C09EBD /* Assets.xcassets */; };
 		C762C65F1E1D559000C09EBD /* BarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762C6501E1D559000C09EBD /* BarButtonItem.swift */; };
-		C762C6601E1D559000C09EBD /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762C6511E1D559000C09EBD /* Button.swift */; };
 		C762C6641E1D559000C09EBD /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762C6551E1D559000C09EBD /* ImageView.swift */; };
 		C762C6651E1D559000C09EBD /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762C6561E1D559000C09EBD /* Label.swift */; };
 		C762C6661E1D559000C09EBD /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762C6571E1D559000C09EBD /* NavigationController.swift */; };
@@ -155,7 +153,6 @@
 		A09DE8CF20E7C05C00F6F2BF /* Kingfisher+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kingfisher+Rx.swift"; sourceTree = "<group>"; };
 		A09DE8D320E7C2C400F6F2BF /* ErrorTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
 		A09DE8D520E7C2C400F6F2BF /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
-		A09DE8DA20E7C73900F6F2BF /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
 		A09DE8DC20E7C82E00F6F2BF /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		A09DE8E220EBB75700F6F2BF /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		A0E2B090210738C9000DA282 /* KafkaRefresh+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KafkaRefresh+Rx.swift"; sourceTree = "<group>"; };
@@ -163,7 +160,6 @@
 		C762C6221E1D414B00C09EBD /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		C762C6241E1D417C00C09EBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C762C6501E1D559000C09EBD /* BarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButtonItem.swift; sourceTree = "<group>"; };
-		C762C6511E1D559000C09EBD /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		C762C6551E1D559000C09EBD /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		C762C6561E1D559000C09EBD /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		C762C6571E1D559000C09EBD /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
@@ -507,14 +503,12 @@
 			children = (
 				A09DE8CA20E7BE9B00F6F2BF /* Table View Cells */,
 				C762C6501E1D559000C09EBD /* BarButtonItem.swift */,
-				C762C6511E1D559000C09EBD /* Button.swift */,
 				C762C6551E1D559000C09EBD /* ImageView.swift */,
 				C762C6561E1D559000C09EBD /* Label.swift */,
 				C762C6571E1D559000C09EBD /* NavigationController.swift */,
 				075E75E421D2C6B200213683 /* PickerView.swift */,
 				C762C6581E1D559000C09EBD /* ScrollView.swift */,
 				A09DE8DC20E7C82E00F6F2BF /* SearchBar.swift */,
-				A09DE8DA20E7C73900F6F2BF /* SegmentedControl.swift */,
 				A00C54C820E25B5A00DA5F98 /* StackView.swift */,
 				C762C6591E1D559000C09EBD /* TableView.swift */,
 				C762C65B1E1D559000C09EBD /* TableViewController.swift */,
@@ -986,7 +980,6 @@
 				C762C6801E1D5A7300C09EBD /* Observable+Operators.swift in Sources */,
 				C762C6661E1D559000C09EBD /* NavigationController.swift in Sources */,
 				07FC337E1FFFE4E300D53888 /* LibsManager.swift in Sources */,
-				C762C6601E1D559000C09EBD /* Button.swift in Sources */,
 				2C10711D246C2326003FF1B3 /* SPHHomeViewController.swift in Sources */,
 				07FC337F1FFFE4E300D53888 /* LogManager.swift in Sources */,
 				07FC33871FFFE68800D53888 /* Api.swift in Sources */,
@@ -1006,7 +999,6 @@
 				A0E2B091210738C9000DA282 /* KafkaRefresh+Rx.swift in Sources */,
 				C762C6941E1D5D6E00C09EBD /* Reachability.swift in Sources */,
 				07FC337D1FFFE4E300D53888 /* AnalyticsManager.swift in Sources */,
-				A09DE8DB20E7C73900F6F2BF /* SegmentedControl.swift in Sources */,
 				2C107132246CE75D003FF1B3 /* SPHHomeCell.swift in Sources */,
 				C762C67F1E1D5A7300C09EBD /* Observable+Logging.swift in Sources */,
 				C762C66D1E1D559000C09EBD /* ViewController.swift in Sources */,
