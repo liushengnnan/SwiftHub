@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A09499511E1D1CB600EFDE29"
-               BuildableName = "SwiftHub.app"
-               BlueprintName = "SwiftHub"
-               ReferencedContainer = "container:SwiftHub.xcodeproj">
+               BuildableName = "SphDemo.app"
+               BlueprintName = "SphDemo"
+               ReferencedContainer = "container:SphDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,18 +33,18 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A09499511E1D1CB600EFDE29"
-            BuildableName = "SwiftHub.app"
-            BlueprintName = "SwiftHub"
-            ReferencedContainer = "container:SwiftHub.xcodeproj">
+            BuildableName = "SphDemo.app"
+            BlueprintName = "SphDemo"
+            ReferencedContainer = "container:SphDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A09499511E1D1CB600EFDE29"
-            BuildableName = "SwiftHub.app"
-            BlueprintName = "SwiftHub"
-            ReferencedContainer = "container:SwiftHub.xcodeproj">
+            BuildableName = "SphDemo.app"
+            BlueprintName = "SphDemo"
+            ReferencedContainer = "container:SphDemo.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
@@ -53,9 +53,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A09499651E1D1CB700EFDE29"
-               BuildableName = "SwiftHubTests.xctest"
-               BlueprintName = "SwiftHubTests"
-               ReferencedContainer = "container:SwiftHub.xcodeproj">
+               BuildableName = "SphDemoTests.xctest"
+               BlueprintName = "SphDemoTests"
+               ReferencedContainer = "container:SphDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -63,9 +63,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A09499701E1D1CB700EFDE29"
-               BuildableName = "SwiftHubUITests.xctest"
-               BlueprintName = "SwiftHubUITests"
-               ReferencedContainer = "container:SwiftHub.xcodeproj">
+               BuildableName = "SphDemoUITests.xctest"
+               BlueprintName = "SphDemoUITests"
+               ReferencedContainer = "container:SphDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A09499511E1D1CB600EFDE29"
-            BuildableName = "SwiftHub.app"
-            BlueprintName = "SwiftHub"
-            ReferencedContainer = "container:SwiftHub.xcodeproj">
+            BuildableName = "SphDemo.app"
+            BlueprintName = "SphDemo"
+            ReferencedContainer = "container:SphDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -102,9 +102,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A09499511E1D1CB600EFDE29"
-            BuildableName = "SwiftHub.app"
-            BlueprintName = "SwiftHub"
-            ReferencedContainer = "container:SwiftHub.xcodeproj">
+            BuildableName = "SphDemo.app"
+            BlueprintName = "SphDemo"
+            ReferencedContainer = "container:SphDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

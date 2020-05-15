@@ -8,7 +8,7 @@
 
 import Quick
 import Nimble
-@testable import SwiftHub
+@testable import SphDemo
 
 class RecordTests: QuickSpec {
     override func spec() {

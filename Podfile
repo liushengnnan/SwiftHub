@@ -4,8 +4,7 @@ platform :ios, '11.0'
 use_frameworks!
 inhibit_all_warnings!
 
-target 'SwiftHub' do
-    # Pods for SwiftHub
+target 'SphDemo' do
 
     # Networking
     pod 'Moya/RxSwift'  # https://github.com/Moya/Moya
@@ -45,7 +44,7 @@ target 'SwiftHub' do
     # Code Quality
     pod 'SwifterSwift', '~> 5.0'  # https://github.com/SwifterSwift/SwifterSwift
     
-    target 'SwiftHubTests' do
+    target 'SphDemoTests' do
         inherit! :search_paths
         # Pods for testing
         pod 'Quick', '~> 2.0'  # https://github.com/Quick/Quick
@@ -55,7 +54,7 @@ target 'SwiftHub' do
     end
 end
 
-target 'SwiftHubUITests' do
+target 'SphDemoUITests' do
     inherit! :search_paths
     # Pods for testing
 end
